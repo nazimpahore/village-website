@@ -57,11 +57,12 @@
         }
 
         .section-title h2 {
-            font-size: 2.8rem;
+            font-size: 2.2rem;
             color: var(--primary-dark);
             display: inline-block;
             position: relative;
             padding-bottom: 20px;
+            margin-bottom: 20px;
             font-weight: 600;
             letter-spacing: 1px;
         }
@@ -166,7 +167,7 @@
         }
 
         .hero-content h1 {
-            font-size: 4.2rem;
+            font-size: 3.5rem;
             margin-bottom: 25px;
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
             font-weight: 700;
@@ -175,7 +176,7 @@
         }
 
         .hero-content p {
-            font-size: 1.3rem;
+            font-size: 1.15rem;
             margin-bottom: 35px;
             max-width: 750px;
             margin-left: auto;
@@ -510,7 +511,7 @@
         }
 
         .contact-info {
-            background: linear-gradient(135deg, var(--light), #e8f5e9);
+            background: var( --primary);
             padding: 18px;
             border-radius: 0 0 15px 15px;
         }
@@ -520,12 +521,12 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 8px;
-            color: var(--text);
+            color: var(--white);
             font-size: 0.95rem;
         }
 
         .contact-info i {
-            color: var(--primary);
+            color: var(--secondary);
             margin-right: 8px;
             font-size: 1rem;
         }
@@ -1041,6 +1042,51 @@
             opacity: 1;
         }
 
+        /* View More Button Container */
+        .view-more-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .view-more-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .view-more-btn i {
+            font-size: 1.2rem;
+        }
+
+        .view-more-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Page Header for Gallery Page */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            padding: 100px 0 60px 0;
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
         /* About Section */
         .about-content {
             display: grid;
@@ -1190,6 +1236,7 @@
             margin-bottom: 25px;
             position: relative;
             padding-bottom: 15px;
+            color: var(--primary);
         }
 
         .contact-info h3::after {
@@ -1199,7 +1246,7 @@
             left: 0;
             width: 60px;
             height: 3px;
-            background-color: var(--secondary);
+            background-color: var(--primary);
         }
 
         .contact-details {
@@ -1210,6 +1257,7 @@
             margin-bottom: 20px;
             display: flex;
             align-items: flex-start;
+            color: var(--text);
         }
 
         .contact-details i {
@@ -1529,11 +1577,11 @@
         /* Responsive Design */
         @media (max-width: 992px) {
             .hero-content h1 {
-                font-size: 3.2rem;
+                font-size: 2.8rem;
             }
 
             .hero-content p {
-                font-size: 1.2rem;
+                font-size: 1.05rem;
             }
             
             nav .container {
@@ -1545,7 +1593,7 @@
             }
 
             .section-title h2 {
-                font-size: 2.4rem;
+                font-size: 2rem;
             }
 
             .sports-content,
@@ -1587,17 +1635,17 @@
 
         @media (max-width: 768px) {
             .hero-content h1 {
-                font-size: 2.8rem;
+                font-size: 2.4rem;
                 letter-spacing: 1px;
             }
             
             .hero-content p {
-                font-size: 1.1rem;
+                font-size: 1rem;
                 padding: 0 15px;
             }
             
             .section-title h2 {
-                font-size: 2.2rem;
+                font-size: 1.9rem;
             }
 
             section {
@@ -1741,17 +1789,17 @@
             }
             
             .hero-content h1 {
-                font-size: 2.2rem;
+                font-size: 1.9rem;
                 letter-spacing: 0.5px;
             }
 
             .hero-content p {
-                font-size: 1rem;
+                font-size: 0.95rem;
                 line-height: 1.6;
             }
             
             .section-title h2 {
-                font-size: 1.9rem;
+                font-size: 1.7rem;
             }
 
             .section-title {
