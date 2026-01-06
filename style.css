@@ -13,13 +13,15 @@
             --accent: #4caf50;
             --light: #f5f9f5;
             --dark: #333;
-            --text: #333;
+            --text: #2c2c2c;
             --text-light: #666;
             --white: #ffffff;
-            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
-            --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.2);
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 12px 25px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 15px 35px rgba(0, 0, 0, 0.15);
+            --shadow-xl: 0 25px 60px rgba(0, 0, 0, 0.2);
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: all 0.2s ease;
         }
 
         html {
@@ -28,10 +30,12 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
+            background: linear-gradient(to bottom, #ffffff 0%, var(--light) 100%);
             color: var(--text);
-            line-height: 1.6;
+            line-height: 1.7;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         h1, h2, h3, h4 {
@@ -47,13 +51,28 @@
         }
 
         section {
-            padding: 80px 0;
+            padding: 90px 0;
+            position: relative;
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            background-image: radial-gradient(circle at 20px 20px, var(--primary) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 70px;
+            margin-bottom: 75px;
             position: relative;
+            animation: fadeInUp 0.8s ease;
         }
 
         .section-title h2 {
@@ -63,8 +82,12 @@
             position: relative;
             padding-bottom: 20px;
             margin-bottom: 20px;
-            font-weight: 600;
-            letter-spacing: 1px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .section-title h2::before {
@@ -73,37 +96,48 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 60px;
-            height: 4px;
+            width: 70px;
+            height: 5px;
             background: linear-gradient(90deg, var(--secondary), var(--secondary-dark));
-            border-radius: 2px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(255, 152, 0, 0.3);
         }
 
         .section-title h2::after {
             content: '';
             position: absolute;
-            bottom: -8px;
+            bottom: -10px;
             left: 50%;
             transform: translateX(-50%);
-            width: 120px;
-            height: 2px;
-            background-color: var(--primary-light);
-            border-radius: 2px;
+            width: 130px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--primary-light), transparent);
+            border-radius: 10px;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+            font-size: 1.05rem;
+            margin-top: 15px;
+            line-height: 1.8;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .btn {
             display: inline-block;
-            padding: 12px 35px;
+            padding: 14px 40px;
             background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
             color: var(--white);
             text-decoration: none;
             border-radius: 50px;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.2px;
             transition: var(--transition);
             border: 2px solid transparent;
-            box-shadow: var(--shadow);
+            box-shadow: 0 10px 30px rgba(255, 152, 0, 0.3);
             font-size: 14px;
             position: relative;
             overflow: hidden;
@@ -118,19 +152,36 @@
             width: 0;
             height: 100%;
             background: var(--white);
-            transition: width 0.4s ease;
+            transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: -1;
+        }
+
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
         }
 
         .btn:hover {
             color: var(--secondary);
             border-color: var(--secondary);
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(255, 152, 0, 0.4);
         }
 
         .btn:hover::before {
             width: 100%;
+        }
+
+        .btn:active {
+            transform: translateY(-2px) scale(0.98);
         }
 
         /* Header Styles */
@@ -300,12 +351,12 @@
 
         .school-card {
             background-color: var(--white);
-            border-radius: 15px;
+            border-radius: 20px;
             overflow: hidden;
             box-shadow: var(--shadow);
             transition: var(--transition);
             position: relative;
-            border: 1px solid rgba(46, 125, 50, 0.1);
+            border: 1px solid rgba(46, 125, 50, 0.08);
         }
 
         .school-card::before {
@@ -314,15 +365,16 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 4px;
+            height: 5px;
             background: linear-gradient(90deg, var(--primary), var(--accent));
             transform: scaleX(0);
-            transition: transform 0.4s ease;
+            transform-origin: left;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .school-card:hover {
-            transform: translateY(-12px);
-            box-shadow: var(--shadow-xl);
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(46, 125, 50, 0.2);
         }
 
         .school-card:hover::before {
@@ -332,7 +384,7 @@
         .school-img {
             height: 250px;
             overflow: hidden;
-            background: linear-gradient(135deg, #f0f0f0, #e8f5e9);
+            background: linear-gradient(135deg, #f8f9fa, #e8f5e9);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -346,18 +398,26 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(46, 125, 50, 0.1), transparent);
+            background: linear-gradient(135deg, rgba(46, 125, 50, 0.1), rgba(76, 175, 80, 0.05));
+            opacity: 1;
+            transition: opacity 0.4s ease;
+        }
+
+        .school-card:hover .school-img::after {
+            opacity: 0.3;
         }
 
         .school-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.5s ease;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            filter: brightness(1) contrast(1.05);
         }
 
         .school-card:hover .school-img img {
-            transform: scale(1.08);
+            transform: scale(1.12) rotate(1deg);
+            filter: brightness(1.05) contrast(1.1);
         }
 
         .school-img i {
@@ -387,17 +447,21 @@
         }
 
         .school-info ul li {
-            margin-bottom: 12px;
+            margin-bottom: 14px;
             display: flex;
             align-items: center;
-            padding: 8px;
-            border-radius: 5px;
+            padding: 10px 12px;
+            border-radius: 8px;
             transition: var(--transition);
+            background: rgba(46, 125, 50, 0.02);
+            border-left: 3px solid transparent;
         }
 
         .school-info ul li:hover {
-            background-color: rgba(46, 125, 50, 0.05);
-            padding-left: 15px;
+            background-color: rgba(46, 125, 50, 0.08);
+            padding-left: 18px;
+            border-left-color: var(--secondary);
+            transform: translateX(5px);
         }
 
         .school-info ul li i {
