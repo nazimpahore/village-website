@@ -1797,6 +1797,11 @@
                 font-size: 0.95rem;
                 line-height: 1.6;
             }
+
+            header {
+                height: 100vh;
+                background-attachment: scroll;
+            }
             
             .section-title h2 {
                 font-size: 1.7rem;
@@ -1804,6 +1809,11 @@
 
             .section-title {
                 margin-bottom: 40px;
+            }
+
+            .section-title p {
+                font-size: 0.9rem;
+                padding: 0 10px;
             }
             
             .gallery-grid {
@@ -1821,10 +1831,24 @@
                 letter-spacing: 1px;
             }
 
+            .view-more-btn {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+
             .school-info,
             .clinic-info,
             .pride-info {
                 padding: 20px;
+            }
+
+            .school-info h3,
+            .clinic-info h3 {
+                font-size: 1.5rem;
+            }
+
+            .school-info ul li {
+                font-size: 0.9rem;
             }
 
             .agriculture-stats,
@@ -1833,9 +1857,61 @@
                 padding: 20px;
             }
 
+            .agriculture-stats h3,
+            .sports-list h3 {
+                font-size: 1.7rem;
+            }
+
+            .crops-info {
+                margin-top: 30px;
+            }
+
+            .crops-info h3 {
+                font-size: 1.7rem;
+            }
+
+            .crops-info ul li {
+                font-size: 0.88rem;
+                padding-left: 30px;
+            }
+
+            .landowner-list {
+                gap: 12px;
+            }
+
+            .landowner {
+                padding: 10px 15px;
+                font-size: 0.85rem;
+            }
+
+            .landowner-img {
+                width: 38px;
+                height: 38px;
+            }
+
             .stats-grid {
                 grid-template-columns: 1fr;
                 gap: 15px;
+            }
+
+            .stat-item {
+                padding: 20px 15px;
+            }
+
+            .stat-item h4 {
+                font-size: 2rem;
+            }
+
+            .stat-item p {
+                font-size: 0.9rem;
+            }
+
+            .population-stats h3 {
+                font-size: 2rem;
+            }
+
+            .population-stats > p {
+                font-size: 3rem;
             }
 
             .nav-logo {
@@ -1852,6 +1928,15 @@
 
             .about-image {
                 height: 250px;
+            }
+
+            .about-text h3 {
+                font-size: 1.7rem;
+            }
+
+            .about-text p {
+                font-size: 0.95rem;
+                text-align: justify;
             }
 
             .map-container {
@@ -1906,8 +1991,21 @@
                 width: 60px;
             }
 
+            .chart-label-M,
+            .chart-label-F {
+                font-size: 0.9rem;
+            }
+
             .tournament-count {
                 font-size: 4rem;
+            }
+
+            .tournaments h4 {
+                font-size: 1.5rem;
+            }
+
+            .tournaments p {
+                font-size: 0.9rem;
             }
 
             .sports-list li {
@@ -1915,9 +2013,21 @@
                 font-size: 0.9rem;
             }
 
+            .sports-list li i {
+                font-size: 1.2rem;
+            }
+
             .contact-form h3,
             .contact-info h3 {
                 font-size: 1.6rem;
+            }
+
+            .contact-details li {
+                font-size: 0.9rem;
+            }
+
+            .contact-details strong {
+                font-size: 0.95rem;
             }
 
             .form-group input,
@@ -1926,8 +2036,34 @@
                 font-size: 0.9rem;
             }
 
+            .form-group label {
+                font-size: 0.9rem;
+            }
+
             .footer-content {
                 gap: 30px;
+                grid-template-columns: 1fr;
+            }
+
+            .footer-column h3 {
+                font-size: 1.4rem;
+                margin-bottom: 20px;
+            }
+
+            .footer-column p {
+                font-size: 0.9rem;
+            }
+
+            .footer-links li {
+                margin-bottom: 10px;
+            }
+
+            .footer-links a {
+                font-size: 0.9rem;
+            }
+
+            .copyright p {
+                font-size: 0.85rem;
             }
 
             .scroll-to-top {
@@ -1936,5 +2072,73 @@
                 bottom: 20px;
                 right: 20px;
                 font-size: 1.3rem;
+            }
+
+            .page-header {
+                padding: 80px 0 50px 0;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .page-header p {
+                font-size: 1rem;
+                padding: 0 15px;
+            }
+        }
+
+        /* Extra small devices */
+        @media (max-width: 400px) {
+            .hero-content h1 {
+                font-size: 1.6rem;
+            }
+
+            .hero-content p {
+                font-size: 0.88rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.5rem;
+            }
+
+            .nav-logo span {
+                font-size: 1rem;
+            }
+
+            .container {
+                width: 98%;
+                padding: 0 10px;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 12px;
+            }
+
+            .school-info h3,
+            .clinic-info h3 {
+                font-size: 1.3rem;
+            }
+
+            .stat-item h4 {
+                font-size: 1.8rem;
+            }
+
+            .tournament-count {
+                font-size: 3.5rem;
+            }
+
+            .pride-info h3 {
+                font-size: 1.3rem;
+            }
+
+            .contact-form,
+            .contact-info {
+                padding: 20px 15px;
+            }
+
+            .footer-column {
+                padding: 0 10px;
             }
         }
