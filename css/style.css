@@ -31,6 +31,8 @@
 
         html {
             scroll-behavior: smooth;
+            /* Prevent horizontal scroll on mobile */
+            overflow-x: hidden;
         }
 
         body {
@@ -42,6 +44,14 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             -webkit-tap-highlight-color: rgba(0, 102, 204, 0.2);
+            min-height: 100vh;
+        }
+
+        /* Ensure images are responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
 
         h1, h2, h3, h4 {
@@ -51,7 +61,9 @@
 
         .container {
             width: 90%;
-                  padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
         section {
@@ -306,10 +318,7 @@
             justify-content: space-between;
             align-items: center;
             gap: 5px;
-            /* background: #000; */
             margin-left: 60px;
-            
-          
         }
 
         .nav-logo {
@@ -477,7 +486,7 @@
         /* Education Section */
         .education-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
             gap: 40px;
         }
 
@@ -606,7 +615,7 @@
         /* Medical Section */
         .clinics-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
             gap: 30px;
         }
 
@@ -730,7 +739,7 @@
         /* Agriculture Section */
         .agriculture-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
             gap: 40px;
             align-items: center;
         }
@@ -872,7 +881,7 @@
         /* Population Section */
         .population-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
             gap: 30px;
         }
 
@@ -950,7 +959,7 @@
             padding: 50px;
             box-shadow: var(--shadow-lg);
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
             gap: 50px;
             align-items: center;
             border: 1px solid rgba(46, 125, 50, 0.1);
@@ -1032,7 +1041,7 @@
         /* Pride Section */
         .pride-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
             gap: 35px;
         }
 
@@ -1175,7 +1184,7 @@
         /* Gallery Section */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
             gap: 20px;
         }
 
@@ -1286,7 +1295,7 @@
         /* About Section */
         .about-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
             gap: 40px;
             align-items: center;
         }
@@ -1415,7 +1424,7 @@
         /* Contact Section */
         .contact-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
             gap: 40px;
         }
 
@@ -1537,7 +1546,7 @@
 
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
             gap: 50px;
             margin-bottom: 50px;
             position: relative;
@@ -1818,6 +1827,11 @@
 
         /* Responsive Design */
         @media (max-width: 992px) {
+            nav .container {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
             .hero-content h1 {
                 font-size: 2.8rem;
             }
@@ -1876,6 +1890,11 @@
         }
 
         @media (max-width: 768px) {
+            nav .container {
+                margin-left: 0;
+                padding: 0 15px;
+            }
+
             .hero-content h1 {
                 font-size: 2.4rem;
                 letter-spacing: 1px;
@@ -1908,6 +1927,9 @@
                 box-shadow: 0 10px 40px rgba(0, 102, 204, 0.4);
                 border-top: 1px solid rgba(255, 255, 255, 0.1);
                 gap: 0;
+                max-height: calc(100vh - 70px);
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
             }
             
             .nav-links.active {
@@ -2301,6 +2323,16 @@
                 font-size: 0.9rem;
             }
 
+            /* Better input handling on iOS */
+            .form-group input,
+            .form-group textarea,
+            .form-group select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                font-size: 16px; /* Prevents zoom on iOS */
+            }
+
             .footer-content {
                 gap: 30px;
                 grid-template-columns: 1fr;
@@ -2587,5 +2619,32 @@
                 width: 38px;
                 height: 38px;
                 font-size: 0.9rem;
+            }
+        }
+
+        /* Landscape orientation on mobile */
+        @media (max-width: 768px) and (orientation: landscape) {
+            header {
+                height: auto;
+                min-height: 100vh;
+                padding: 80px 0 40px;
+            }
+
+            .hero-content {
+                padding: 20px;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+
+            .hero-content p {
+                font-size: 0.95rem;
+                margin-bottom: 20px;
+            }
+
+            section {
+                padding: 40px 0;
             }
         }
