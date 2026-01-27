@@ -315,59 +315,45 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 5px;
+            
             margin-left: 60px;
+            gap: 50px;
         }
 
         .nav-logo {
-            font-size: 1.6rem;
-            font-weight: 600;
-            color: var(--white);
             display: flex;
+            flex-direction: column;
             align-items: center;
+            gap: 8px;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
-            text-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
-            padding: 8px 16px;
-            /* border-radius: 12px; */
-            /* background: #000; */
         }
 
-        .nav-logo span {
-            color: var(--white);
-            font-weight: 800;
-            letter-spacing: 0.5px;
-            text-shadow: 0 0 20px rgba(201, 162, 39, 0.5);
-        }
-
-        @keyframes gradient-shift {
-            0%, 100% {
-                background-position: 0% center;
-            }
-            50% {
-                background-position: 100% center;
-            }
-        }
-
-        .nav-logo i {
-            color: var(--accent);
-            margin-right: 14px;
-            font-size: 2.2rem;
+        .nav-logo img {
+            height: 70px;
+            width: auto;
+            object-fit: contain;
             filter: drop-shadow(0 3px 12px rgba(201, 162, 39, 0.6));
-            animation: float-rotate 4s ease-in-out infinite;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        @keyframes float-rotate {
-            0%, 100% {
-                transform: translateY(0) rotate(0deg);
-            }
-            25% {
-                transform: translateY(-5px) rotate(-5deg);
-            }
-            75% {
-                transform: translateY(-5px) rotate(5deg);
-            }
+        .nav-logo:hover img {
+            transform: scale(1.05);
+            filter: drop-shadow(0 5px 15px rgba(201, 162, 39, 0.8));
         }
+
+        .nav-logo p {
+            color: var(--white);
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            white-space: nowrap;
+        }
+
+
 
         .nav-links {
             display: flex;
@@ -2193,12 +2179,12 @@
                 font-size: 3rem;
             }
 
-            .nav-logo {
-                font-size: 1.1rem;
+            .nav-logo img {
+                height: 45px;
             }
 
-            .nav-logo i {
-                font-size: 1.4rem;
+            .nav-logo p {
+                font-size: 0.75rem;
             }
 
             .container {
