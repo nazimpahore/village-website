@@ -1,44 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sd" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suleman Pahore - Our Beautiful Village</title>
+    <title>سليمان پهور - اسان جو خوبصورت ڳوٺ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6, p, li, a, span, label, button, input, textarea {
+            font-family: 'Noto Nastaliq Urdu', 'Poppins', sans-serif;
+        }
+        #langToggleBtn {
+            background: rgba(201,162,39,0.18);
+            color: #C9A227;
+            border: 1.5px solid rgba(201,162,39,0.55);
+            border-radius: 20px;
+            padding: 5px 16px;
+            font-size: 0.85rem;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            white-space: nowrap;
+            margin-right: 8px;
+        }
+        #langToggleBtn:hover {
+            background: #C9A227;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
     <header id="home">
         <div class="hero-content">
-            <h1>Welcome to Suleman Pahore</h1>
-            <p>A peaceful village nestled in nature's embrace, where tradition meets progress and community thrives.</p>
-            <a href="#about" class="btn">Explore Our Village</a>
+            <h1 data-en="Welcome to Suleman Pahore" data-sd="سليمان پهور ۾ ڀلي ڪري آيا">سليمان پهور ۾ ڀلي ڪري آيا</h1>
+            <p data-en="A peaceful village nestled in nature's embrace, where tradition meets progress and community thrives." data-sd="قدرت جي آغوش ۾ وسيل هڪ پرامن ڳوٺ، جتي روايت ترقي سان ملي ٿي ۽ برادري پروان چڙهي ٿي.">قدرت جي آغوش ۾ وسيل هڪ پرامن ڳوٺ، جتي روايت ترقي سان ملي ٿي ۽ برادري پروان چڙهي ٿي.</p>
+            <a href="#about" class="btn" data-en="Explore Our Village" data-sd="اسان جو ڳوٺ ڏسو">اسان جو ڳوٺ ڏسو</a>
         </div>
     </header>
 
     <!-- Navigation -->
     <nav>
-           <div class="container">
+        <div class="container">
             <div class="nav-logo">
                 <div class="logo-badge">
                     <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
                         <circle cx="24" cy="24" r="22" fill="rgba(201,162,39,0.15)" stroke="rgba(201,162,39,0.6)" stroke-width="1.5"/>
-                        <!-- House / Village -->
                         <path d="M24 10 L36 20 L36 38 L12 38 L12 20 Z" fill="none" stroke="#C9A227" stroke-width="1.8" stroke-linejoin="round"/>
                         <path d="M20 38 L20 28 L28 28 L28 38" fill="none" stroke="#C9A227" stroke-width="1.6" stroke-linejoin="round"/>
-                        <!-- Roof peak -->
                         <path d="M10 21 L24 9 L38 21" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                        <!-- Window -->
                         <rect x="15" y="23" width="6" height="6" rx="1" fill="rgba(201,162,39,0.5)" stroke="#C9A227" stroke-width="1.2"/>
                         <rect x="27" y="23" width="6" height="6" rx="1" fill="rgba(201,162,39,0.5)" stroke="#C9A227" stroke-width="1.2"/>
                     </svg>
                 </div>
                 <div class="logo-text">
-                    <span class="logo-name">Suleman Pahore</span>
-                    <span class="logo-tagline">Village</span>
+                    <span class="logo-name" data-en="Suleman Pahore" data-sd="سليمان پهور">سليمان پهور</span>
+                    <span class="logo-tagline" data-en="Village" data-sd="ڳوٺ">ڳوٺ</span>
                 </div>
             </div>
             <button class="hamburger" id="hamburger">
@@ -46,19 +65,20 @@
                 <span></span>
                 <span></span>
             </button>
-            
+
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#medical">Medical</a></li>
-                <li><a href="#agriculture">Agriculture</a></li>
-                <li><a href="#population">Population</a></li>
-                <li><a href="#sports">Sports</a></li>
-                <li><a href="pride.html">Pride</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#location">Location</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-en="Home" data-sd="گهر">گهر</a></li>
+                <li><a href="#education" data-en="Education" data-sd="تعليم">تعليم</a></li>
+                <li><a href="#medical" data-en="Medical" data-sd="طبي سهولتون">طبي سهولتون</a></li>
+                <li><a href="#agriculture" data-en="Agriculture" data-sd="زراعت">زراعت</a></li>
+                <li><a href="#population" data-en="Population" data-sd="آبادي">آبادي</a></li>
+                <li><a href="#sports" data-en="Sports" data-sd="راندون">راندون</a></li>
+                <li><a href="pride.html" data-en="Pride" data-sd="فخر">فخر</a></li>
+                <li><a href="gallery.html" data-en="Gallery" data-sd="گيلري">گيلري</a></li>
+                <li><a href="#about" data-en="About" data-sd="اسان بابت">اسان بابت</a></li>
+                <li><a href="#location" data-en="Location" data-sd="مقام">مقام</a></li>
+                <li><a href="#contact" data-en="Contact" data-sd="رابطو">رابطو</a></li>
+                <li><button id="langToggleBtn" title="Switch to English">🌐 English</button></li>
             </ul>
         </div>
     </nav>
@@ -67,39 +87,37 @@
     <section id="education" class="education">
         <div class="container">
             <div class="section-title">
-                <h2>Education</h2>
+                <h2 data-en="Education" data-sd="تعليم">تعليم</h2>
             </div>
             <div class="education-content">
                 <div class="school-card">
                     <div class="school-img">
-                        <!-- <i class="fas fa-school"></i> -->
-                         <img src="images/high school.jpg" alt="">
+                        <img src="images/high school.jpg" alt="">
                     </div>
                     <div class="school-info">
-                        <h3>High School Suleman Pahore</h3>
-                        <p>A center of excellence providing quality education since 2015. Our high school prepares students for a bright future.</p>
+                        <h3 data-en="High School Suleman Pahore" data-sd="هاءِ اسڪول سليمان پهور">هاءِ اسڪول سليمان پهور</h3>
+                        <p data-en="A center of excellence providing quality education since 2015. Our high school prepares students for a bright future." data-sd="2015 کان معياري تعليم فراهم ڪندڙ هڪ اعليٰ مرڪز. اسان جو هاءِ اسڪول شاگردن کي روشن مستقبل لاءِ تيار ڪري ٿو.">2015 کان معياري تعليم فراهم ڪندڙ هڪ اعليٰ مرڪز. اسان جو هاءِ اسڪول شاگردن کي روشن مستقبل لاءِ تيار ڪري ٿو.</p>
                         <ul>
-                            <li><i class="fas fa-user-graduate"></i> 200+ Students</li>
-                            <li><i class="fas fa-chalkboard-teacher"></i> 10 Qualified Teachers</li>
-                            <li><i class="fas fa-book"></i> 6th Class To 10th Class</li>
-                            <li><i class="fas fa-laptop"></i> Computer Lab Facility</li>
+                            <li><i class="fas fa-user-graduate"></i> <span data-en="200+ Students" data-sd="200+ شاگرد">200+ شاگرد</span></li>
+                            <li><i class="fas fa-chalkboard-teacher"></i> <span data-en="10 Qualified Teachers" data-sd="10 قابل استاد">10 قابل استاد</span></li>
+                            <li><i class="fas fa-book"></i> <span data-en="6th Class To 10th Class" data-sd="ڇهين کان ڏهين جماعت تائين">ڇهين کان ڏهين جماعت تائين</span></li>
+                            <li><i class="fas fa-laptop"></i> <span data-en="Computer Lab Facility" data-sd="ڪمپيوٽر ليب جي سهولت">ڪمپيوٽر ليب جي سهولت</span></li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="school-card">
                     <div class="school-img">
-                        <!-- <i class="fas fa-school"></i> -->
-                         <img src="images/primary school.webp" alt="">
+                        <img src="images/primary school.webp" alt="">
                     </div>
                     <div class="school-info">
-                        <h3>Primary School Suleman Pahore</h3>
-                        <p>Established in 1980, our primary school provides foundational education to the young minds of our village.</p>
+                        <h3 data-en="Primary School Suleman Pahore" data-sd="پرائمري اسڪول سليمان پهور">پرائمري اسڪول سليمان پهور</h3>
+                        <p data-en="Established in 1980, our primary school provides foundational education to the young minds of our village." data-sd="1980 ۾ قائم ٿيل، اسان جو پرائمري اسڪول ڳوٺ جي نوجوان ذهنن کي بنيادي تعليم فراهم ڪري ٿو.">1980 ۾ قائم ٿيل، اسان جو پرائمري اسڪول ڳوٺ جي نوجوان ذهنن کي بنيادي تعليم فراهم ڪري ٿو.</p>
                         <ul>
-                            <li><i class="fas fa-user-graduate"></i> 250+ Students</li>
-                            <li><i class="fas fa-chalkboard-teacher"></i> 12 Dedicated Teachers</li>
-                            <li><i class="fas fa-paint-brush"></i> KG class To 5th class</li>
-                            <li><i class="fas fa-utensils"></i> Computer Lab Facility</li>
+                            <li><i class="fas fa-user-graduate"></i> <span data-en="250+ Students" data-sd="250+ شاگرد">250+ شاگرد</span></li>
+                            <li><i class="fas fa-chalkboard-teacher"></i> <span data-en="12 Dedicated Teachers" data-sd="12 محنتي استاد">12 محنتي استاد</span></li>
+                            <li><i class="fas fa-paint-brush"></i> <span data-en="KG class To 5th class" data-sd="KG کان پنجين جماعت تائين">KG کان پنجين جماعت تائين</span></li>
+                            <li><i class="fas fa-utensils"></i> <span data-en="Computer Lab Facility" data-sd="ڪمپيوٽر ليب جي سهولت">ڪمپيوٽر ليب جي سهولت</span></li>
                         </ul>
                     </div>
                 </div>
@@ -111,84 +129,80 @@
     <section id="medical" class="medical" style="background-color: #f8f9fa;">
         <div class="container">
             <div class="section-title">
-                <h2>Medical Facilities</h2>
+                <h2 data-en="Medical Facilities" data-sd="طبي سهولتون">طبي سهولتون</h2>
             </div>
             <div class="clinics-grid">
                 <div class="clinic-card">
                     <div class="doctor-img">
-                         <!-- <i class="fas fa-user-md"></i> -->
-                         <img src="images/ali nawaz.jpeg" alt="">
-                        
+                        <img src="images/ali nawaz.jpeg" alt="">
                     </div>
                     <div class="clinic-info">
-                        <h3>Mehran Clinic</h3>
-                        <p><strong>Dr. Ali Nawaz Pahore</strong></p>
-                        <p>General Physician and Child Specialist  MBBS LUMHS Jamshoro</p>
+                        <h3 data-en="Mehran Clinic" data-sd="مهران ڪلينڪ">مهران ڪلينڪ</h3>
+                        <p><strong data-en="Dr. Ali Nawaz Pahore" data-sd="ڊاڪٽر علي نواز پهور">ڊاڪٽر علي نواز پهور</strong></p>
+                        <p data-en="General Physician and Child Specialist  MBBS LUMHS Jamshoro" data-sd="جنرل فزيشن ۽ ٻارن جو ماهر  MBBS LUMHS جامشورو">جنرل فزيشن ۽ ٻارن جو ماهر  MBBS LUMHS جامشورو</p>
                     </div>
                     <div class="doctor-hours">
-                        <i class="fas fa-clock"></i> 9:00 AM – 5:00 PM (Mon–Sat)
+                        <i class="fas fa-clock"></i> <span data-en="9:00 AM – 5:00 PM (Mon–Sat)" data-sd="صبح 9:00 – شام 5:00 (سومر–ڇنڇر)">صبح 9:00 – شام 5:00 (سومر–ڇنڇر)</span>
                     </div>
                     <div class="doctor-contacts">
                         <a href="tel:+923001234567" class="doc-btn doc-btn-phone">
-                            <i class="fas fa-phone"></i> Call
+                            <i class="fas fa-phone"></i> <span data-en="Call" data-sd="فون">فون</span>
                         </a>
                         <a href="https://wa.me/923001234567" target="_blank" class="doc-btn doc-btn-whatsapp">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
+                            <i class="fab fa-whatsapp"></i> <span data-en="WhatsApp" data-sd="واٽس ايپ">واٽس ايپ</span>
                         </a>
                         <a href="mailto:alinawaz@example.com" class="doc-btn doc-btn-email">
-                            <i class="fas fa-envelope"></i> Email
+                            <i class="fas fa-envelope"></i> <span data-en="Email" data-sd="اي ميل">اي ميل</span>
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="clinic-card">
                     <div class="doctor-img">
-                        <!-- <i class="fas fa-user-md"></i> -->
-                         <img src="images/dr ilyas.jpeg" alt="">
+                        <img src="images/dr ilyas.jpeg" alt="">
                     </div>
                     <div class="clinic-info">
-                        <h3>AL-Shifa Clinic</h3>
-                        <p><strong>Dr. Ilyas Pahore</strong></p>
-                        <p>General Physician with 10 years of experience<br>MBBS LUMHS Jamshoro</p>
+                        <h3 data-en="AL-Shifa Clinic" data-sd="الشفاء ڪلينڪ">الشفاء ڪلينڪ</h3>
+                        <p><strong data-en="Dr. Ilyas Pahore" data-sd="ڊاڪٽر الياس پهور">ڊاڪٽر الياس پهور</strong></p>
+                        <p data-en="General Physician with 10 years of experience MBBS LUMHS Jamshoro" data-sd="10 سالن جي تجربي سان جنرل فزيشن MBBS LUMHS جامشورو">10 سالن جي تجربي سان جنرل فزيشن MBBS LUMHS جامشورو</p>
                     </div>
                     <div class="doctor-hours">
-                        <i class="fas fa-clock"></i> 10:00 AM – 7:00 PM (Mon–Sat)
+                        <i class="fas fa-clock"></i> <span data-en="10:00 AM – 7:00 PM (Mon–Sat)" data-sd="صبح 10:00 – شام 7:00 (سومر–ڇنڇر)">صبح 10:00 – شام 7:00 (سومر–ڇنڇر)</span>
                     </div>
                     <div class="doctor-contacts">
                         <a href="tel:+923217654321" class="doc-btn doc-btn-phone">
-                            <i class="fas fa-phone"></i> Call
+                            <i class="fas fa-phone"></i> <span data-en="Call" data-sd="فون">فون</span>
                         </a>
                         <a href="https://wa.me/923217654321" target="_blank" class="doc-btn doc-btn-whatsapp">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
+                            <i class="fab fa-whatsapp"></i> <span data-en="WhatsApp" data-sd="واٽس ايپ">واٽس ايپ</span>
                         </a>
                         <a href="mailto:ilyas@example.com" class="doc-btn doc-btn-email">
-                            <i class="fas fa-envelope"></i> Email
+                            <i class="fas fa-envelope"></i> <span data-en="Email" data-sd="اي ميل">اي ميل</span>
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="clinic-card">
                     <div class="doctor-img">
-                        <!-- <i class="fas fa-user-md"></i> -->
-                         <img src="images/moosa.jpeg" alt="">
+                        <img src="images/moosa.jpeg" alt="">
                     </div>
                     <div class="clinic-info">
-                        <h3>M Moosa Clinic</h3>
-                        <p><strong>DR. Moosa Pahore</strong></p>
-                        <p>General Physician with 20 years of experience</p>
+                        <h3 data-en="M Moosa Clinic" data-sd="ايم موسيٰ ڪلينڪ">ايم موسيٰ ڪلينڪ</h3>
+                        <p><strong data-en="DR. Moosa Pahore" data-sd="ڊاڪٽر موسيٰ پهور">ڊاڪٽر موسيٰ پهور</strong></p>
+                        <p data-en="General Physician with 20 years of experience" data-sd="20 سالن جي تجربي سان جنرل فزيشن">20 سالن جي تجربي سان جنرل فزيشن</p>
                     </div>
                     <div class="doctor-hours">
-                        <i class="fas fa-clock"></i> 9:00 AM – 7:00 PM (Mon–Sun)
+                        <i class="fas fa-clock"></i> <span data-en="9:00 AM – 7:00 PM (Mon–Sun)" data-sd="صبح 9:00 – شام 7:00 (سومر–آچر)">صبح 9:00 – شام 7:00 (سومر–آچر)</span>
                     </div>
                     <div class="doctor-contacts">
                         <a href="tel:+923459876543" class="doc-btn doc-btn-phone">
-                            <i class="fas fa-phone"></i> Call
+                            <i class="fas fa-phone"></i> <span data-en="Call" data-sd="فون">فون</span>
                         </a>
                         <a href="https://wa.me/923459876543" target="_blank" class="doc-btn doc-btn-whatsapp">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
+                            <i class="fab fa-whatsapp"></i> <span data-en="WhatsApp" data-sd="واٽس ايپ">واٽس ايپ</span>
                         </a>
                         <a href="mailto:moosa@example.com" class="doc-btn doc-btn-email">
-                            <i class="fas fa-envelope"></i> Email
+                            <i class="fas fa-envelope"></i> <span data-en="Email" data-sd="اي ميل">اي ميل</span>
                         </a>
                     </div>
                 </div>
@@ -200,79 +214,76 @@
     <section id="agriculture" class="agriculture">
         <div class="container">
             <div class="section-title">
-                <h2>Agriculture</h2>
+                <h2 data-en="Agriculture" data-sd="زراعت">زراعت</h2>
             </div>
             <div class="agriculture-container">
                 <div class="agriculture-stats">
-                    <h3>Our Agricultural Heritage</h3>
-                    <p>Suleman Pahore is blessed with fertile land and hardworking farmers who continue our agricultural traditions.</p>
-                    
+                    <h3 data-en="Our Agricultural Heritage" data-sd="اسان جو زرعي ورثو">اسان جو زرعي ورثو</h3>
+                    <p data-en="Suleman Pahore is blessed with fertile land and hardworking farmers who continue our agricultural traditions." data-sd="سليمان پهور زرخيز زمين ۽ محنتي هارين سان نوازيل آهي جيڪي اسان جي زرعي روايتن کي جاري رکن ٿا.">سليمان پهور زرخيز زمين ۽ محنتي هارين سان نوازيل آهي جيڪي اسان جي زرعي روايتن کي جاري رکن ٿا.</p>
+
                     <div class="stats-grid">
                         <div class="stat-item">
                             <h4>5000</h4>
-                            <p>Acres of Farmland</p>
+                            <p data-en="Acres of Farmland" data-sd="ايڪڙ زرعي زمين">ايڪڙ زرعي زمين</p>
                         </div>
                         <div class="stat-item">
                             <h4>320</h4>
-                            <p>Farming Families</p>
+                            <p data-en="Farming Families" data-sd="هاري خاندان">هاري خاندان</p>
                         </div>
                         <div class="stat-item">
                             <h4>12</h4>
-                            <p>Crop Varieties</p>
+                            <p data-en="Crop Varieties" data-sd="فصلن جون قسمون">فصلن جون قسمون</p>
                         </div>
                         <div class="stat-item">
-                            <h4>Sugarcane</h4>
-                            <p>Highest Yield Crop</p>
+                            <h4 data-en="Sugarcane" data-sd="گنڊيرو">گنڊيرو</h4>
+                            <p data-en="Highest Yield Crop" data-sd="سڀ کان وڌيڪ پيداوار وارو فصل">سڀ کان وڌيڪ پيداوار وارو فصل</p>
                         </div>
                     </div>
-                    
+
                     <div class="landowners">
-                        <h4>Major Landowners:</h4>
+                        <h4 data-en="Major Landowners:" data-sd="وڏا زميندار:">وڏا زميندار:</h4>
                         <div class="landowner-list">
                             <div class="landowner">
                                 <div class="landowner-img">
-                                    <!-- <i class="fas fa-user"></i> -->
-                                     <img src="images/m moosa.jpeg" alt="">
+                                    <img src="images/m moosa.jpeg" alt="">
                                 </div>
-                                <span>M Moosa Pahore</span>
+                                <span data-en="M Moosa Pahore" data-sd="ايم موسيٰ پهور">ايم موسيٰ پهور</span>
                             </div>
                             <div class="landowner">
                                 <div class="landowner-img">
-                                    <!-- <i class="fas fa-user"></i> -->
-                                     <img src="images/saleh p.jpeg" alt="">
+                                    <img src="images/saleh p.jpeg" alt="">
                                 </div>
-                                <span>Haji Saleh Pahore</span>
+                                <span data-en="Haji Saleh Pahore" data-sd="حاجي صالح پهور">حاجي صالح پهور</span>
                             </div>
                             <div class="landowner">
                                 <div class="landowner-img">
-                                    <!-- <i class="fas fa-user"></i> -->
-                                     <img src="images/moosa.jpeg" alt="">
+                                    <img src="images/moosa.jpeg" alt="">
                                 </div>
-                                <span>Dr Moosa Pahore</span>
+                                <span data-en="Dr Moosa Pahore" data-sd="ڊاڪٽر موسيٰ پهور">ڊاڪٽر موسيٰ پهور</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="crops-info">
-                    <h3>Major Crops</h3>
-                    <p>Our village specializes in several important crops that contribute to the local economy:</p>
+                    <h3 data-en="Major Crops" data-sd="مکيه فصل">مکيه فصل</h3>
+                    <p data-en="Our village specializes in several important crops that contribute to the local economy:" data-sd="اسان جو ڳوٺ ڪيترن اهم فصلن ۾ ماهر آهي جيڪي مقامي معيشت ۾ حصو وجهن ٿا:">اسان جو ڳوٺ ڪيترن اهم فصلن ۾ ماهر آهي جيڪي مقامي معيشت ۾ حصو وجهن ٿا:</p>
                     <ul style="list-style: none; margin-top: 20px;">
-                        <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
-                            <i class="fas fa-seedling" style="color: var(--primary); position: absolute; left: 0;"></i>
-                            <strong>Wheat</strong> - Our primary crop with highest yield (30% of farmland)
+                        <li style="margin-bottom: 15px; padding-right: 25px; position: relative;">
+                            <i class="fas fa-seedling" style="color: var(--primary); position: absolute; right: 0;"></i>
+                            <strong data-en="Wheat" data-sd="ڪڻڪ">ڪڻڪ</strong> - <span data-en="Our primary crop with highest yield (30% of farmland)" data-sd="اسان جو بنيادي فصل جنهن جي سڀ کان وڌيڪ پيداوار آهي (زرعي زمين جو 30%)">اسان جو بنيادي فصل جنهن جي سڀ کان وڌيڪ پيداوار آهي (زرعي زمين جو 30%)</span>
                         </li>
-                        <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
-                            <i class="fas fa-seedling" style="color: var(--primary); position: absolute; left: 0;"></i>
-                            <strong>cotton</strong> - Our primary crop with highest yield (30% of farmland)
+                        <li style="margin-bottom: 15px; padding-right: 25px; position: relative;">
+                            <i class="fas fa-seedling" style="color: var(--primary); position: absolute; right: 0;"></i>
+                            <strong data-en="Cotton" data-sd="ڪپهه">ڪپهه</strong> - <span data-en="Our primary crop with highest yield (30% of farmland)" data-sd="اسان جو بنيادي فصل جنهن جي سڀ کان وڌيڪ پيداوار آهي (زرعي زمين جو 30%)">اسان جو بنيادي فصل جنهن جي سڀ کان وڌيڪ پيداوار آهي (زرعي زمين جو 30%)</span>
                         </li>
-                        <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
-                            <i class="fas fa-seedling" style="color: var(--primary); position: absolute; left: 0;"></i>
-                            <strong>Sugarcane</strong> - Important cash crop for local sugar mills (30% farmland)
+                        <li style="margin-bottom: 15px; padding-right: 25px; position: relative;">
+                            <i class="fas fa-seedling" style="color: var(--primary); position: absolute; right: 0;"></i>
+                            <strong data-en="Sugarcane" data-sd="گنڊيرو">گنڊيرو</strong> - <span data-en="Important cash crop for local sugar mills (30% farmland)" data-sd="مقامي کنڊ ملن لاءِ اهم نقدي فصل (زرعي زمين جو 30%)">مقامي کنڊ ملن لاءِ اهم نقدي فصل (زرعي زمين جو 30%)</span>
                         </li>
-                        <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
-                            <i class="fas fa-seedling" style="color: var(--primary); position: absolute; left: 0;"></i>
-                            <strong>Vegetables</strong> - Seasonal vegetables for local markets (10% farmland)
+                        <li style="margin-bottom: 15px; padding-right: 25px; position: relative;">
+                            <i class="fas fa-seedling" style="color: var(--primary); position: absolute; right: 0;"></i>
+                            <strong data-en="Vegetables" data-sd="ترڪاريون">ترڪاريون</strong> - <span data-en="Seasonal vegetables for local markets (10% farmland)" data-sd="مقامي بازارن لاءِ موسمي ترڪاريون (زرعي زمين جو 10%)">مقامي بازارن لاءِ موسمي ترڪاريون (زرعي زمين جو 10%)</span>
                         </li>
                     </ul>
                 </div>
@@ -284,36 +295,36 @@
     <section id="population" class="population" style="background-color: #f8f9fa;">
         <div class="container">
             <div class="section-title">
-                <h2>Population</h2>
+                <h2 data-en="Population" data-sd="آبادي">آبادي</h2>
             </div>
             <div class="population-content">
                 <div class="population-stats">
-                    <h3>Total Population</h3>
+                    <h3 data-en="Total Population" data-sd="ڪل آبادي">ڪل آبادي</h3>
                     <p class="population-number">10000+</p>
-                    
+
                     <div class="stats-grid population-gender-grid" style="margin-top: 40px;">
                         <div class="stat-item" style="background-color: #3498db; color: white;">
                             <h4>6000</h4>
-                            <p>Male Residents</p>
+                            <p data-en="Male Residents" data-sd="مرد رهواسي">مرد رهواسي</p>
                         </div>
                         <div class="stat-item" style="background-color: #e74c3c; color: white;">
                             <h4>4000</h4>
-                            <p>Female Residents</p>
+                            <p data-en="Female Residents" data-sd="عورت رهواسي">عورت رهواسي</p>
                         </div>
                     </div>
-                    
+
                     <div class="stat-item" style="margin-top: 20px; background-color: var(--secondary); color: white;">
                         <h4>85%</h4>
-                        <p>Literacy Rate</p>
+                        <p data-en="Literacy Rate" data-sd="خواندگي جو شرح">خواندگي جو شرح</p>
                     </div>
                 </div>
-                
+
                 <div class="chart-container">
                     <div class="chart male-chart" id="maleChart" style="height: 0; background-color: #3498db;"></div>
-                    <div class="chart-label-M">Female</div>
-                    
+                    <div class="chart-label-M" data-en="Female" data-sd="عورت">عورت</div>
+
                     <div class="chart female-chart" id="femaleChart" style="height: 0; background-color: #e74c3c;"></div>
-                    <div class="chart-label-F">Male</div>
+                    <div class="chart-label-F" data-en="Male" data-sd="مرد">مرد</div>
                 </div>
             </div>
         </div>
@@ -323,27 +334,27 @@
     <section id="sports" class="sports">
         <div class="container">
             <div class="section-title">
-                <h2>Sports</h2>
+                <h2 data-en="Sports" data-sd="راندون">راندون</h2>
             </div>
             <div class="sports-content">
                 <div class="sports-list">
-                    <h3>Popular Sports in Our Village</h3>
-                    <p>Sports play a vital role in our community, bringing people together and promoting healthy lifestyles.</p>
-                    
+                    <h3 data-en="Popular Sports in Our Village" data-sd="اسان جي ڳوٺ ۾ مشهور راندون">اسان جي ڳوٺ ۾ مشهور راندون</h3>
+                    <p data-en="Sports play a vital role in our community, bringing people together and promoting healthy lifestyles." data-sd="راندون اسان جي برادري ۾ اهم ڪردار ادا ڪن ٿيون، ماڻهن کي گڏ آڻين ٿيون ۽ صحتمند طرز زندگي کي فروغ ڏين ٿيون.">راندون اسان جي برادري ۾ اهم ڪردار ادا ڪن ٿيون، ماڻهن کي گڏ آڻين ٿيون ۽ صحتمند طرز زندگي کي فروغ ڏين ٿيون.</p>
+
                     <ul>
-                        <li><i class="fas fa-futbol"></i> Cricket - The most popular sport with multiple teams</li>
-                        <li><i class="fas fa-volleyball-ball"></i> Volleyball - Played in community grounds</li>
-                        <li><i class="fas fa-football-ball"></i> Football - Growing popularity among youth</li>
-                        <li><i class="fas fa-table-tennis"></i> Table Tennis - Played at community center</li>
-                        <li><i class="fas fa-running"></i> Athletics - Annual sports day events</li>
-                        <li><i class="fas fa-dumbbell"></i> Traditional Wrestling - Cultural sport events</li>
+                        <li><i class="fas fa-futbol"></i> <span data-en="Cricket - The most popular sport with multiple teams" data-sd="ڪرڪيٽ - ڪيترن ٽيمن سان سڀ کان مشهور راند">ڪرڪيٽ - ڪيترن ٽيمن سان سڀ کان مشهور راند</span></li>
+                        <li><i class="fas fa-volleyball-ball"></i> <span data-en="Volleyball - Played in community grounds" data-sd="واليبال - برادري جي ميدانن ۾ کيڏي وڃي ٿي">واليبال - برادري جي ميدانن ۾ کيڏي وڃي ٿي</span></li>
+                        <li><i class="fas fa-football-ball"></i> <span data-en="Football - Growing popularity among youth" data-sd="فٽبال - نوجوانن ۾ وڌندڙ مقبوليت">فٽبال - نوجوانن ۾ وڌندڙ مقبوليت</span></li>
+                        <li><i class="fas fa-table-tennis"></i> <span data-en="Table Tennis - Played at community center" data-sd="ٽيبل ٽينس - برادري مرڪز ۾ کيڏي وڃي ٿي">ٽيبل ٽينس - برادري مرڪز ۾ کيڏي وڃي ٿي</span></li>
+                        <li><i class="fas fa-running"></i> <span data-en="Athletics - Annual sports day events" data-sd="ايٿليٽڪس - سالياني راندين جا تقريبون">ايٿليٽڪس - سالياني راندين جا تقريبون</span></li>
+                        <li><i class="fas fa-dumbbell"></i> <span data-en="Traditional Wrestling - Cultural sport events" data-sd="روايتي ڪشتي - ثقافتي راندين جون تقريبون">روايتي ڪشتي - ثقافتي راندين جون تقريبون</span></li>
                     </ul>
                 </div>
-                
+
                 <div class="tournaments">
                     <div class="tournament-count">27</div>
-                    <h4>Tournaments Held</h4>
-                    <p>Annual cricket tournament is the highlight of our sports calendar, with 16 teams competing for the village championship.</p>
+                    <h4 data-en="Tournaments Held" data-sd="ٽورنامينٽ منعقد ٿيا">ٽورنامينٽ منعقد ٿيا</h4>
+                    <p data-en="Annual cricket tournament is the highlight of our sports calendar, with 16 teams competing for the village championship." data-sd="سالياني ڪرڪيٽ ٽورنامينٽ اسان جي راندين جي ڪئلينڊر جو خاص واقعو آهي، جنهن ۾ 16 ٽيمون ڳوٺ جي چيمپيئن شپ لاءِ مقابلو ڪن ٿيون.">سالياني ڪرڪيٽ ٽورنامينٽ اسان جي راندين جي ڪئلينڊر جو خاص واقعو آهي، جنهن ۾ 16 ٽيمون ڳوٺ جي چيمپيئن شپ لاءِ مقابلو ڪن ٿيون.</p>
                 </div>
             </div>
         </div>
@@ -353,8 +364,8 @@
     <section id="pride" class="pride" style="background-color: #f8f9fa;">
         <div class="container">
             <div class="section-title">
-                <h2>Our Pride</h2>
-                <p>Celebrating the remarkable achievements of our village members</p>
+                <h2 data-en="Our Pride" data-sd="اسان جو فخر">اسان جو فخر</h2>
+                <p data-en="Celebrating the remarkable achievements of our village members" data-sd="اسان جي ڳوٺ جي ماڻهن جي شاندار ڪاميابين کي ساراهيندي">اسان جي ڳوٺ جي ماڻهن جي شاندار ڪاميابين کي ساراهيندي</p>
             </div>
             <div class="pride-grid">
                 <div class="pride-card">
@@ -363,36 +374,36 @@
                     </div>
                     <div class="pride-info">
                         <h3>M. Bachal Pahore</h3>
-                        <p>Civil Judge Megistrate</p>
-                        <p>Sujawal Sindh Pakistan</p>
+                        <p data-en="Civil Judge Megistrate" data-sd="سول جج ميجسٽريٽ">سول جج ميجسٽريٽ</p>
+                        <p data-en="Sujawal Sindh Pakistan" data-sd="سجاول سنڌ پاڪستان">سجاول سنڌ پاڪستان</p>
                     </div>
                 </div>
-                
+
                 <div class="pride-card">
                     <div class="pride-img">
                         <img src="images/baboo.jpeg" alt="">
                     </div>
                     <div class="pride-info">
                         <h3>Mehboob Alam Pahore</h3>
-                        <p>Senior Police Officer</p>
-                        <p>District Police Department</p>
+                        <p data-en="Senior Police Officer" data-sd="سينيئر پوليس آفيسر">سينيئر پوليس آفيسر</p>
+                        <p data-en="District Police Department" data-sd="ضلعي پوليس کاتو">ضلعي پوليس کاتو</p>
                     </div>
                 </div>
-                
+
                 <div class="pride-card">
                     <div class="pride-img">
                         <img src="images/tarrique.jpeg" alt="">
                     </div>
                     <div class="pride-info">
                         <h3>Engr Tarique Aziz</h3>
-                        <p>Petroleum Engineer</p>
-                        <p>Khobar, Saudi Arabia</p>
+                        <p data-en="Petroleum Engineer" data-sd="پيٽروليم انجنيئر">پيٽروليم انجنيئر</p>
+                        <p data-en="Khobar, Saudi Arabia" data-sd="خبر، سعودي عرب">خبر، سعودي عرب</p>
                     </div>
                 </div>
             </div>
             <div class="view-more-container">
                 <a href="pride.html" class="btn view-more-btn">
-                    <i class="fas fa-award"></i> View More
+                    <i class="fas fa-award"></i> <span data-en="View More" data-sd="وڌيڪ ڏسو">وڌيڪ ڏسو</span>
                 </a>
             </div>
         </div>
@@ -402,38 +413,38 @@
     <section id="gallery" class="gallery">
         <div class="container">
             <div class="section-title" style="text-align: center;">
-                <h2>Village Gallery</h2>
-                <p>A glimpse into the beautiful moments of our village</p>
+                <h2 data-en="Village Gallery" data-sd="ڳوٺ جي گيلري">ڳوٺ جي گيلري</h2>
+                <p data-en="A glimpse into the beautiful moments of our village" data-sd="اسان جي ڳوٺ جي خوبصورت لمحن جي هڪ جهلڪ">اسان جي ڳوٺ جي خوبصورت لمحن جي هڪ جهلڪ</p>
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <img src="images/land.jpeg" alt="Rainy Season">
-                    <div class="gallery-overlay">Rainy Season</div>
+                    <div class="gallery-overlay" data-en="Rainy Season" data-sd="برسات جو موسم">برسات جو موسم</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/sadarurdin shah.jpeg" alt="Meets With Sain Sadaruddin Shah">
-                    <div class="gallery-overlay">Meets With Sain Sadaruddin Shah</div>
+                    <div class="gallery-overlay" data-en="Meets With Sain Sadaruddin Shah" data-sd="سائين صدرالدين شاهه سان ملاقات">سائين صدرالدين شاهه سان ملاقات</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/mohsin.jpeg" alt="Captured Moment from Mohsin Pahore's Wedding Ceremony">
-                    <div class="gallery-overlay">Captured Moment from Mohsin Pahore's Wedding Ceremony</div>
+                    <img src="images/mohsin.jpeg" alt="Mohsin Pahore's Wedding Ceremony">
+                    <div class="gallery-overlay" data-en="Captured Moment from Mohsin Pahore's Wedding Ceremony" data-sd="محسن پهور جي شادي جي تقريب جو يادگار لمحو">محسن پهور جي شادي جي تقريب جو يادگار لمحو</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/old.jpeg" alt="Senior Villagers">
-                    <div class="gallery-overlay">Senior Villagers</div>
+                    <div class="gallery-overlay" data-en="Senior Villagers" data-sd="بزرگ ڳوٺاڻا">بزرگ ڳوٺاڻا</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/ramzan.jpeg" alt="Hafiz e saheban">
-                    <div class="gallery-overlay">Hafiz e saheban</div>
+                    <div class="gallery-overlay" data-en="Hafiz e saheban" data-sd="حافظ صاحبان">حافظ صاحبان</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/jalsa.jpeg" alt="Jalsa Sharif">
-                    <div class="gallery-overlay">Jalsa Sharif</div>
+                    <div class="gallery-overlay" data-en="Jalsa Sharif" data-sd="جلسو شريف">جلسو شريف</div>
                 </div>
             </div>
             <div class="view-more-container">
                 <a href="gallery.html" class="btn view-more-btn">
-                    <i class="fas fa-images"></i> View More
+                    <i class="fas fa-images"></i> <span data-en="View More" data-sd="وڌيڪ ڏسو">وڌيڪ ڏسو</span>
                 </a>
             </div>
         </div>
@@ -443,15 +454,15 @@
     <section id="about" class="about" style="background-color: #f8f9fa;">
         <div class="container">
             <div class="section-title">
-                <h2>About Our Village</h2>
+                <h2 data-en="About Our Village" data-sd="اسان جي ڳوٺ بابت">اسان جي ڳوٺ بابت</h2>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>The Heart of Rural Beauty</h3>
-                    <p>Suleman Pahore is a picturesque village located in Badin Sindh Pakistan, known for its lush green fields, traditional culture, and warm-hearted community. Established over 200 years ago, our village has preserved its natural beauty while embracing modern development.</p>
-                    <p>Our community is built on values of harmony, sustainability, and mutual respect. The village is surrounded by fertile agricultural lands where farmers grow a variety of crops using traditional and eco-friendly methods.</p>
-                    <p>Visitors to Suleman Pahore are welcomed with open arms and can experience authentic rural life, participate in cultural festivals, and enjoy the tranquil natural surroundings.</p>
-                    <a href="#contact" class="btn">Contact Us</a>
+                    <h3 data-en="The Heart of Rural Beauty" data-sd="ڏيهاتي خوبصورتي جو دل">ڏيهاتي خوبصورتي جو دل</h3>
+                    <p data-en="Suleman Pahore is a picturesque village located in Badin Sindh Pakistan, known for its lush green fields, traditional culture, and warm-hearted community. Established over 200 years ago, our village has preserved its natural beauty while embracing modern development." data-sd="سليمان پهور بادين سنڌ پاڪستان ۾ واقع هڪ خوبصورت ڳوٺ آهي، جيڪو پنهنجن سرسبز کيتن، روايتي ثقافت ۽ گرمجوش برادري لاءِ مشهور آهي. 200 سال کان وڌيڪ عرصو اڳ قائم ٿيل، اسان جي ڳوٺ پنهنجي قدرتي خوبصورتي کي برقرار رکندي جديد ترقي کي اپنايو آهي.">سليمان پهور بادين سنڌ پاڪستان ۾ واقع هڪ خوبصورت ڳوٺ آهي، جيڪو پنهنجن سرسبز کيتن، روايتي ثقافت ۽ گرمجوش برادري لاءِ مشهور آهي. 200 سال کان وڌيڪ عرصو اڳ قائم ٿيل، اسان جي ڳوٺ پنهنجي قدرتي خوبصورتي کي برقرار رکندي جديد ترقي کي اپنايو آهي.</p>
+                    <p data-en="Our community is built on values of harmony, sustainability, and mutual respect. The village is surrounded by fertile agricultural lands where farmers grow a variety of crops using traditional and eco-friendly methods." data-sd="اسان جي برادري هم آهنگي، پائيداري ۽ باهمي احترام جي قدرن تي قائم آهي. ڳوٺ زرخيز زرعي زمينن سان گهريل آهي جتي هاري روايتي ۽ ماحول دوست طريقن سان مختلف فصل اگهائين ٿا.">اسان جي برادري هم آهنگي، پائيداري ۽ باهمي احترام جي قدرن تي قائم آهي. ڳوٺ زرخيز زرعي زمينن سان گهريل آهي جتي هاري روايتي ۽ ماحول دوست طريقن سان مختلف فصل اگهائين ٿا.</p>
+                    <p data-en="Visitors to Suleman Pahore are welcomed with open arms and can experience authentic rural life, participate in cultural festivals, and enjoy the tranquil natural surroundings." data-sd="سليمان پهور جا مهمان کليل دلين سان ڀلي ڪري آيا چيو وڃي ٿو ۽ اصلي ڏيهاتي زندگي جو تجربو ڪري سگهن ٿا، ثقافتي تهوارن ۾ حصو وٺي سگهن ٿا، ۽ پرسڪون قدرتي ماحول مان لطف اندوز ٿي سگهن ٿا.">سليمان پهور جا مهمان کليل دلين سان ڀلي ڪري آيا چيو وڃي ٿو ۽ اصلي ڏيهاتي زندگي جو تجربو ڪري سگهن ٿا، ثقافتي تهوارن ۾ حصو وٺي سگهن ٿا، ۽ پرسڪون قدرتي ماحول مان لطف اندوز ٿي سگهن ٿا.</p>
+                    <a href="#contact" class="btn" data-en="Contact Us" data-sd="رابطو ڪريو">رابطو ڪريو</a>
                 </div>
                 <div class="about-image">
                     <img src="images/landscap.jpeg" alt="Suleman Pahore Village">
@@ -464,11 +475,11 @@
     <section id="location" class="location">
         <div class="container">
             <div class="section-title">
-                <h2>Our Location</h2>
+                <h2 data-en="Our Location" data-sd="اسان جو مقام">اسان جو مقام</h2>
             </div>
             <div class="location-container">
                 <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.7555700437492!2d68.89816582444213!3d25.21146428112446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c200b8c43d7c1%3A0x18b07d87b06651e!2sSuleman%20Pahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1767359086355!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.7555700437492!2d68.89816582444213!3d25.21146428112446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c200b8c43d7c1%3A0x18b07d87b06651e!2sSuleman%20Pahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1767359086355!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -478,77 +489,66 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-title">
-                <h2>Contact Us</h2>
+                <h2 data-en="Contact Us" data-sd="رابطو ڪريو">رابطو ڪريو</h2>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Get In Touch</h3>
+                    <h3 data-en="Get In Touch" data-sd="رابطي ۾ اچو">رابطي ۾ اچو</h3>
                     <ul class="contact-details">
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
-                                <strong style="color: #f8f9fa;">Address</strong>
-                                <p>Suleman Pahore, Rural Badin, Sindh, Pakistan</p>
+                                <strong style="color: #f8f9fa;" data-en="Address" data-sd="پتو">پتو</strong>
+                                <p data-en="Suleman Pahore, Rural Badin, Sindh, Pakistan" data-sd="سليمان پهور، ڏيهاتي بادين، سنڌ، پاڪستان">سليمان پهور، ڏيهاتي بادين، سنڌ، پاڪستان</p>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-phone-alt"></i>
                             <div>
-                                <strong style="color: #f8f9fa;">Phone</strong>
+                                <strong style="color: #f8f9fa;" data-en="Phone" data-sd="فون">فون</strong>
                                 <p>+92 3063071648</p>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
                             <div>
-                                <strong style="color: #f8f9fa;">Email</strong>
+                                <strong style="color: #f8f9fa;" data-en="Email" data-sd="اي ميل">اي ميل</strong>
                                 <p>villagesulemanpahore@gmail.com</p>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-clock"></i>
                             <div>
-                                <strong style="color: #f8f9fa;">Visiting Hours</strong>
-                                <p>Always open to visitors</p>
+                                <strong style="color: #f8f9fa;" data-en="Visiting Hours" data-sd="ملاقات جا وقت">ملاقات جا وقت</strong>
+                                <p data-en="Always open to visitors" data-sd="مهمانن لاءِ هميشه کليل">مهمانن لاءِ هميشه کليل</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-                
+
                 <div class="contact-form">
-                    <h3>Send a Message</h3>
-                    <!-- 
-                        IMPORTANT: To activate Web3Forms:
-                        1. Go to https://web3forms.com
-                        2. Sign up using: villagesulemanpahore@gmail.com
-                        3. Get your Access Key from the dashboard
-                        4. Replace 'YOUR_ACCESS_KEY_HERE' below with your actual access key
-                        5. Save the file and test the form
-                    -->
+                    <h3 data-en="Send a Message" data-sd="پيغام موڪليو">پيغام موڪليو</h3>
                     <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
-                        <!-- Web3Forms Access Key -->
                         <input type="hidden" name="access_key" value="fe7c7fb0-ef45-4142-82b9-db68728b5b10">
-                        
-                        <!-- Redirect to thank you page after submission (optional) -->
                         <input type="hidden" name="redirect" value="https://villagesulemanpahore.com/thank-you.html">
-                        
+
                         <div class="form-group">
-                            <label for="name">Full Name</label>
+                            <label for="name" data-en="Full Name" data-sd="پورو نالو">پورو نالو</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
+                            <label for="email" data-en="Email Address" data-sd="اي ميل پتو">اي ميل پتو</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject">Subject</label>
+                            <label for="subject" data-en="Subject" data-sd="موضوع">موضوع</label>
                             <input type="text" id="subject" name="subject">
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
+                            <label for="message" data-en="Message" data-sd="پيغام">پيغام</label>
                             <textarea id="message" name="message" required></textarea>
                         </div>
-                        <button type="submit" class="btn">Send Message</button>
+                        <button type="submit" class="btn" data-en="Send Message" data-sd="پيغام موڪليو">پيغام موڪليو</button>
                     </form>
                 </div>
             </div>
@@ -561,7 +561,7 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Suleman Pahore</h3>
-                    <p>A community rooted in tradition, growing with progress. Our village represents the perfect blend of rural charm and modern development.</p>
+                    <p data-en="A community rooted in tradition, growing with progress. Our village represents the perfect blend of rural charm and modern development." data-sd="روايت ۾ جڙيل، ترقي سان وڌندڙ برادري. اسان جو ڳوٺ ڏيهاتي سحر ۽ جديد ترقي جو بهترين امتزاج پيش ڪري ٿو.">روايت ۾ جڙيل، ترقي سان وڌندڙ برادري. اسان جو ڳوٺ ڏيهاتي سحر ۽ جديد ترقي جو بهترين امتزاج پيش ڪري ٿو.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -569,49 +569,50 @@
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3 data-en="Quick Links" data-sd="فوري لنڪ">فوري لنڪ</h3>
                     <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#medical">Medical</a></li>
-                        <li><a href="#agriculture">Agriculture</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home" data-en="Home" data-sd="گهر">گهر</a></li>
+                        <li><a href="#about" data-en="About Us" data-sd="اسان بابت">اسان بابت</a></li>
+                        <li><a href="#education" data-en="Education" data-sd="تعليم">تعليم</a></li>
+                        <li><a href="#medical" data-en="Medical" data-sd="طبي سهولتون">طبي سهولتون</a></li>
+                        <li><a href="#agriculture" data-en="Agriculture" data-sd="زراعت">زراعت</a></li>
+                        <li><a href="#contact" data-en="Contact" data-sd="رابطو">رابطو</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
-                    <h3>Important Places</h3>
+                    <h3 data-en="Important Places" data-sd="اهم مقام">اهم مقام</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Community Center</a></li>
-                        <li><a href="#">Village Mosque</a></li>
-                        <li><a href="#">Agricultural Market</a></li>
-                        <li><a href="#">Sports Ground</a></li>
-                        <li><a href="#">Primary Health Center</a></li>
-                        <li><a href="#">Public Library</a></li>
+                        <li><a href="#" data-en="Community Center" data-sd="برادري مرڪز">برادري مرڪز</a></li>
+                        <li><a href="#" data-en="Village Mosque" data-sd="ڳوٺ جي مسجد">ڳوٺ جي مسجد</a></li>
+                        <li><a href="#" data-en="Agricultural Market" data-sd="زرعي بازار">زرعي بازار</a></li>
+                        <li><a href="#" data-en="Sports Ground" data-sd="راندين جو ميدان">راندين جو ميدان</a></li>
+                        <li><a href="#" data-en="Primary Health Center" data-sd="پرائمري صحت مرڪز">پرائمري صحت مرڪز</a></li>
+                        <li><a href="#" data-en="Public Library" data-sd="عوامي لائبريري">عوامي لائبريري</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to our newsletter for updates about village events and developments.</p>
+                    <h3 data-en="Newsletter" data-sd="نيوز ليٽر">نيوز ليٽر</h3>
+                    <p data-en="Subscribe to our newsletter for updates about village events and developments." data-sd="ڳوٺ جي واقعن ۽ ترقي بابت تازي خبرن لاءِ اسان جي نيوز ليٽر کي سبسڪرائب ڪريو.">ڳوٺ جي واقعن ۽ ترقي بابت تازي خبرن لاءِ اسان جي نيوز ليٽر کي سبسڪرائب ڪريو.</p>
                     <form style="margin-top: 15px;">
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email Address" style="width: 100%; padding: 10px; border-radius: 5px; border: none; outline: none;">
+                            <input type="email" data-ph-en="Your Email Address" data-ph-sd="توهان جو اي ميل پتو" placeholder="توهان جو اي ميل پتو" style="width: 100%; padding: 10px; border-radius: 5px; border: none; outline: none;">
                         </div>
-                        <button type="submit" class="btn" style="width: 100%; padding: 10px; font-size: 0.9rem;">Subscribe</button>
+                        <button type="submit" class="btn" style="width: 100%; padding: 10px; font-size: 0.9rem;" data-en="Subscribe" data-sd="سبسڪرائب ڪريو">سبسڪرائب ڪريو</button>
                     </form>
                 </div>
             </div>
-            
+
             <div class="copyright">
-                <p>&copy; 2025 Suleman Pahore Village. All rights reserved.</p>
+                <p>&copy; 2025 Suleman Pahore Village. <span data-en="All rights reserved." data-sd="سمورا حق محفوظ آهن.">سمورا حق محفوظ آهن.</span></p>
             </div>
-            </div>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
 </body>
 </html>

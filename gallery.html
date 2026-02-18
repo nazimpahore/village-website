@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sd" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Suleman Pahore</title>
+    <title>گيلري - سليمان پهور</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6, p, li, a, span, label, button, input, textarea {
+            font-family: 'Noto Nastaliq Urdu', 'Poppins', sans-serif;
+        }
+        #langToggleBtn {
+            background: rgba(201,162,39,0.18);
+            color: #C9A227;
+            border: 1.5px solid rgba(201,162,39,0.55);
+            border-radius: 20px;
+            padding: 5px 16px;
+            font-size: 0.85rem;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            white-space: nowrap;
+            margin-right: 8px;
+        }
+        #langToggleBtn:hover {
+            background: #C9A227;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -25,29 +47,30 @@
                     </svg>
                 </div>
                 <div class="logo-text">
-                    <span class="logo-name">Suleman Pahore</span>
-                    <span class="logo-tagline">Village</span>
+                    <span class="logo-name" data-en="Suleman Pahore" data-sd="سليمان پهور">سليمان پهور</span>
+                    <span class="logo-tagline" data-en="Village" data-sd="ڳوٺ">ڳوٺ</span>
                 </div>
             </div>
-            
+
             <button class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            
+
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#education">Education</a></li>
-                <li><a href="medical.html">Medical</a></li>
-                <li><a href="index.html#agriculture">Agriculture</a></li>
-                <li><a href="index.html#population">Population</a></li>
-                <li><a href="index.html#sports">Sports</a></li>
-                <li><a href="index.html#pride">Pride</a></li>
-                <li><a href="gallery.html" class="active">Gallery</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#location">Location</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#home" data-en="Home" data-sd="گهر">گهر</a></li>
+                <li><a href="index.html#education" data-en="Education" data-sd="تعليم">تعليم</a></li>
+                <li><a href="medical.html" data-en="Medical" data-sd="طبي سهولتون">طبي سهولتون</a></li>
+                <li><a href="index.html#agriculture" data-en="Agriculture" data-sd="زراعت">زراعت</a></li>
+                <li><a href="index.html#population" data-en="Population" data-sd="آبادي">آبادي</a></li>
+                <li><a href="index.html#sports" data-en="Sports" data-sd="راندون">راندون</a></li>
+                <li><a href="index.html#pride" data-en="Pride" data-sd="فخر">فخر</a></li>
+                <li><a href="gallery.html" class="active" data-en="Gallery" data-sd="گيلري">گيلري</a></li>
+                <li><a href="index.html#about" data-en="About" data-sd="اسان بابت">اسان بابت</a></li>
+                <li><a href="index.html#location" data-en="Location" data-sd="مقام">مقام</a></li>
+                <li><a href="index.html#contact" data-en="Contact" data-sd="رابطو">رابطو</a></li>
+                <li><button id="langToggleBtn" title="Switch to English">🌐 English</button></li>
             </ul>
         </div>
     </nav>
@@ -55,8 +78,8 @@
     <!-- Gallery Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Village Gallery</h1>
-            <p>Explore the beautiful moments, memories, and stories from our village</p>
+            <h1 data-en="Village Gallery" data-sd="ڳوٺ جي گيلري">ڳوٺ جي گيلري</h1>
+            <p data-en="Explore the beautiful moments, memories, and stories from our village" data-sd="اسان جي ڳوٺ جا خوبصورت لمحا، يادون ۽ ڪهاڻيون ڏسو">اسان جي ڳوٺ جا خوبصورت لمحا، يادون ۽ ڪهاڻيون ڏسو</p>
         </div>
     </section>
 
@@ -68,67 +91,67 @@
                     <i class="ri-image-2-line"></i>
                 </div>
                 <div>
-                    <h2 class="gallery-section-title">Image Gallery</h2>
-                    <p class="gallery-section-subtitle">Captured moments from our village life</p>
+                    <h2 class="gallery-section-title" data-en="Image Gallery" data-sd="تصويري گيلري">تصويري گيلري</h2>
+                    <p class="gallery-section-subtitle" data-en="Captured moments from our village life" data-sd="اسان جي ڳوٺ جي زندگي جا يادگار لمحا">اسان جي ڳوٺ جي زندگي جا يادگار لمحا</p>
                 </div>
             </div>
 
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <img src="images/land.jpeg" alt="Rainy Season">
-                    <div class="gallery-overlay">Rainy Season</div>
+                    <div class="gallery-overlay" data-en="Rainy Season" data-sd="برسات جو موسم">برسات جو موسم</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/sadarurdin shah.jpeg" alt="Meets With Sain Sadaruddin Shah">
-                    <div class="gallery-overlay">Meets With Sain Sadaruddin Shah</div>
+                    <div class="gallery-overlay" data-en="Meets With Sain Sadaruddin Shah" data-sd="سائين صدرالدين شاهه سان ملاقات">سائين صدرالدين شاهه سان ملاقات</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/mohsin.jpeg" alt="Mohsin Pahore's Wedding Ceremony">
-                    <div class="gallery-overlay">Mohsin Pahore's Wedding Ceremony</div>
+                    <div class="gallery-overlay" data-en="Mohsin Pahore's Wedding Ceremony" data-sd="محسن پهور جي شادي جي تقريب">محسن پهور جي شادي جي تقريب</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/old.jpeg" alt="Senior Villagers">
-                    <div class="gallery-overlay">Senior Villagers</div>
+                    <div class="gallery-overlay" data-en="Senior Villagers" data-sd="بزرگ ڳوٺاڻا">بزرگ ڳوٺاڻا</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/ramzan.jpeg" alt="Hafiz e Saheban">
-                    <div class="gallery-overlay">Hafiz e Saheban</div>
+                    <div class="gallery-overlay" data-en="Hafiz e Saheban" data-sd="حافظ صاحبان">حافظ صاحبان</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/jalsa.jpeg" alt="Jalsa Sharif">
-                    <div class="gallery-overlay">Jalsa Sharif</div>
+                    <div class="gallery-overlay" data-en="Jalsa Sharif" data-sd="جلسو شريف">جلسو شريف</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/a winning.jpeg" alt="Team A Celebrating">
-                    <div class="gallery-overlay">Team A Celebrating</div>
+                    <div class="gallery-overlay" data-en="Team A Celebrating" data-sd="ٽيم A جشن ملهائيندي">ٽيم A جشن ملهائيندي</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/b winning.jpeg" alt="Team B Celebrating">
-                    <div class="gallery-overlay">Team B Celebrating</div>
+                    <div class="gallery-overlay" data-en="Team B Celebrating" data-sd="ٽيم B جشن ملهائيندي">ٽيم B جشن ملهائيندي</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/gethiring.jpeg" alt="Villagers Gathering">
-                    <div class="gallery-overlay">Villagers Gathering</div>
+                    <div class="gallery-overlay" data-en="Villagers Gathering" data-sd="ڳوٺاڻن جو اجتماع">ڳوٺاڻن جو اجتماع</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/khalifa.jpeg" alt="Chief Khalifa Lal Bux Ahamadani">
-                    <div class="gallery-overlay">Chief Khalifa Lal Bux Ahamadani</div>
+                    <div class="gallery-overlay" data-en="Chief Khalifa Lal Bux Ahamadani" data-sd="چيف خليفه لال بخش احمداڻي">چيف خليفه لال بخش احمداڻي</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/m khan.jpeg" alt="Respected Teacher Sir M Khan">
-                    <div class="gallery-overlay">Respected Teacher Sir M Khan</div>
+                    <div class="gallery-overlay" data-en="Respected Teacher Sir M Khan" data-sd="محترم استاد سر ايم خان">محترم استاد سر ايم خان</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/suleman.jpeg" alt="Senior Citizens Meeting">
-                    <div class="gallery-overlay">Senior Citizens Meeting</div>
+                    <div class="gallery-overlay" data-en="Senior Citizens Meeting" data-sd="بزرگ شهرين جي ميٽنگ">بزرگ شهرين جي ميٽنگ</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/mamo.jpeg" alt="Abdullah in Funny Mood">
-                    <div class="gallery-overlay">Abdullah in Funny Mood</div>
+                    <div class="gallery-overlay" data-en="Abdullah in Funny Mood" data-sd="عبدالله خوشگوار موڊ ۾">عبدالله خوشگوار موڊ ۾</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/child.jpeg" alt="Cousins on Weekend">
-                    <div class="gallery-overlay">Cousins on Weekend</div>
+                    <div class="gallery-overlay" data-en="Cousins on Weekend" data-sd="هفتي جي موڪل تي چاچا زاد ڀائر">هفتي جي موڪل تي چاچا زاد ڀائر</div>
                 </div>
             </div>
         </div>
@@ -142,106 +165,69 @@
                     <i class="ri-video-line"></i>
                 </div>
                 <div>
-                    <h2 class="gallery-section-title">Video Gallery</h2>
-                    <p class="gallery-section-subtitle">Watch memorable events and celebrations from our village</p>
+                    <h2 class="gallery-section-title" data-en="Video Gallery" data-sd="ويڊيو گيلري">ويڊيو گيلري</h2>
+                    <p class="gallery-section-subtitle" data-en="Watch memorable events and celebrations from our village" data-sd="اسان جي ڳوٺ جا يادگار واقعا ۽ تقريبون ڏسو">اسان جي ڳوٺ جا يادگار واقعا ۽ تقريبون ڏسو</p>
                 </div>
             </div>
 
             <div class="video-grid">
-                <!-- Replace VIDEO_ID with actual YouTube video IDs -->
                 <div class="video-item">
                     <div class="video-wrapper">
-                        <iframe
-                            src="https://www.youtube.com/embed/VIDEO_ID_1"
-                            title="Village Event 1"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Village Event" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="video-caption">
                         <i class="ri-play-circle-line"></i>
-                        <span>Village Event</span>
+                        <span data-en="Village Event" data-sd="ڳوٺ جو واقعو">ڳوٺ جو واقعو</span>
                     </div>
                 </div>
 
                 <div class="video-item">
                     <div class="video-wrapper">
-                        <iframe
-                            src="https://www.youtube.com/embed/VIDEO_ID_2"
-                            title="Jalsa Sharif Highlights"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Jalsa Sharif Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="video-caption">
                         <i class="ri-play-circle-line"></i>
-                        <span>Jalsa Sharif Highlights</span>
+                        <span data-en="Jalsa Sharif Highlights" data-sd="جلسو شريف جي جهلڪيون">جلسو شريف جي جهلڪيون</span>
                     </div>
                 </div>
 
                 <div class="video-item">
                     <div class="video-wrapper">
-                        <iframe
-                            src="https://www.youtube.com/embed/VIDEO_ID_3"
-                            title="Sports Tournament"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="Sports Tournament" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="video-caption">
                         <i class="ri-play-circle-line"></i>
-                        <span>Sports Tournament</span>
+                        <span data-en="Sports Tournament" data-sd="راندين جو ٽورنامينٽ">راندين جو ٽورنامينٽ</span>
                     </div>
                 </div>
 
                 <div class="video-item">
                     <div class="video-wrapper">
-                        <iframe
-                            src="https://www.youtube.com/embed/VIDEO_ID_4"
-                            title="Wedding Ceremony"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" title="Wedding Ceremony" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="video-caption">
                         <i class="ri-play-circle-line"></i>
-                        <span>Wedding Ceremony</span>
+                        <span data-en="Wedding Ceremony" data-sd="شادي جي تقريب">شادي جي تقريب</span>
                     </div>
                 </div>
 
                 <div class="video-item">
                     <div class="video-wrapper">
-                        <iframe
-                            src="https://www.youtube.com/embed/VIDEO_ID_5"
-                            title="Community Gathering"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_5" title="Community Gathering" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="video-caption">
                         <i class="ri-play-circle-line"></i>
-                        <span>Community Gathering</span>
+                        <span data-en="Community Gathering" data-sd="برادري جو اجتماع">برادري جو اجتماع</span>
                     </div>
                 </div>
 
                 <div class="video-item">
                     <div class="video-wrapper">
-                        <iframe
-                            src="https://www.youtube.com/embed/VIDEO_ID_6"
-                            title="Cultural Program"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_6" title="Cultural Program" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="video-caption">
                         <i class="ri-play-circle-line"></i>
-                        <span>Cultural Program</span>
+                        <span data-en="Cultural Program" data-sd="ثقافتي پروگرام">ثقافتي پروگرام</span>
                     </div>
                 </div>
             </div>
@@ -254,7 +240,7 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Suleman Pahore</h3>
-                    <p>A community rooted in tradition, growing with progress. Our village represents the perfect blend of rural charm and modern development.</p>
+                    <p data-en="A community rooted in tradition, growing with progress. Our village represents the perfect blend of rural charm and modern development." data-sd="روايت ۾ جڙيل، ترقي سان وڌندڙ برادري. اسان جو ڳوٺ ڏيهاتي سحر ۽ جديد ترقي جو بهترين امتزاج پيش ڪري ٿو.">روايت ۾ جڙيل، ترقي سان وڌندڙ برادري. اسان جو ڳوٺ ڏيهاتي سحر ۽ جديد ترقي جو بهترين امتزاج پيش ڪري ٿو.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -262,49 +248,50 @@
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3 data-en="Quick Links" data-sd="فوري لنڪ">فوري لنڪ</h3>
                     <ul class="footer-links">
-                        <li><a href="index.html#home">Home</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="index.html#education">Education</a></li>
-                        <li><a href="medical.html">Medical</a></li>
-                        <li><a href="index.html#agriculture">Agriculture</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html#home" data-en="Home" data-sd="گهر">گهر</a></li>
+                        <li><a href="index.html#about" data-en="About Us" data-sd="اسان بابت">اسان بابت</a></li>
+                        <li><a href="index.html#education" data-en="Education" data-sd="تعليم">تعليم</a></li>
+                        <li><a href="medical.html" data-en="Medical" data-sd="طبي سهولتون">طبي سهولتون</a></li>
+                        <li><a href="index.html#agriculture" data-en="Agriculture" data-sd="زراعت">زراعت</a></li>
+                        <li><a href="index.html#contact" data-en="Contact" data-sd="رابطو">رابطو</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
-                    <h3>Important Places</h3>
+                    <h3 data-en="Important Places" data-sd="اهم مقام">اهم مقام</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Community Center</a></li>
-                        <li><a href="#">Village Mosque</a></li>
-                        <li><a href="#">Agricultural Market</a></li>
-                        <li><a href="#">Sports Ground</a></li>
-                        <li><a href="#">Primary Health Center</a></li>
-                        <li><a href="#">Public Library</a></li>
+                        <li><a href="#" data-en="Community Center" data-sd="برادري مرڪز">برادري مرڪز</a></li>
+                        <li><a href="#" data-en="Village Mosque" data-sd="ڳوٺ جي مسجد">ڳوٺ جي مسجد</a></li>
+                        <li><a href="#" data-en="Agricultural Market" data-sd="زرعي بازار">زرعي بازار</a></li>
+                        <li><a href="#" data-en="Sports Ground" data-sd="راندين جو ميدان">راندين جو ميدان</a></li>
+                        <li><a href="#" data-en="Primary Health Center" data-sd="پرائمري صحت مرڪز">پرائمري صحت مرڪز</a></li>
+                        <li><a href="#" data-en="Public Library" data-sd="عوامي لائبريري">عوامي لائبريري</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to our newsletter for updates about village events and developments.</p>
+                    <h3 data-en="Newsletter" data-sd="نيوز ليٽر">نيوز ليٽر</h3>
+                    <p data-en="Subscribe to our newsletter for updates about village events and developments." data-sd="ڳوٺ جي واقعن ۽ ترقي بابت تازي خبرن لاءِ اسان جي نيوز ليٽر کي سبسڪرائب ڪريو.">ڳوٺ جي واقعن ۽ ترقي بابت تازي خبرن لاءِ اسان جي نيوز ليٽر کي سبسڪرائب ڪريو.</p>
                     <form style="margin-top: 15px;">
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email Address" style="width: 100%; padding: 10px; border-radius: 5px; border: none; outline: none;">
+                            <input type="email" data-ph-en="Your Email Address" data-ph-sd="توهان جو اي ميل پتو" placeholder="توهان جو اي ميل پتو" style="width: 100%; padding: 10px; border-radius: 5px; border: none; outline: none;">
                         </div>
-                        <button type="submit" class="btn" style="width: 100%; padding: 10px; font-size: 0.9rem;">Subscribe</button>
+                        <button type="submit" class="btn" style="width: 100%; padding: 10px; font-size: 0.9rem;" data-en="Subscribe" data-sd="سبسڪرائب ڪريو">سبسڪرائب ڪريو</button>
                     </form>
                 </div>
             </div>
-            
+
             <div class="copyright">
-                <p>&copy; 2025 Suleman Pahore Village. All rights reserved.</p>
+                <p>&copy; 2025 Suleman Pahore Village. <span data-en="All rights reserved." data-sd="سمورا حق محفوظ آهن.">سمورا حق محفوظ آهن.</span></p>
             </div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
 </body>
 </html>

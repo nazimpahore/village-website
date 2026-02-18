@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sd" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Pride - Suleman Pahore</title>
+    <title>اسان جو فخر - سليمان پهور</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6, p, li, a, span, label, button, input, textarea {
+            font-family: 'Noto Nastaliq Urdu', 'Poppins', sans-serif;
+        }
+        #langToggleBtn {
+            background: rgba(201,162,39,0.18);
+            color: #C9A227;
+            border: 1.5px solid rgba(201,162,39,0.55);
+            border-radius: 20px;
+            padding: 5px 16px;
+            font-size: 0.85rem;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            white-space: nowrap;
+            margin-right: 8px;
+        }
+        #langToggleBtn:hover {
+            background: #C9A227;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -25,29 +47,30 @@
                     </svg>
                 </div>
                 <div class="logo-text">
-                    <span class="logo-name">Suleman Pahore</span>
-                    <span class="logo-tagline">Village</span>
+                    <span class="logo-name" data-en="Suleman Pahore" data-sd="سليمان پهور">سليمان پهور</span>
+                    <span class="logo-tagline" data-en="Village" data-sd="ڳوٺ">ڳوٺ</span>
                 </div>
             </div>
-            
+
             <button class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            
+
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#education">Education</a></li>
-                <li><a href="medical.html">Medical</a></li>
-                <li><a href="index.html#agriculture">Agriculture</a></li>
-                <li><a href="index.html#population">Population</a></li>
-                <li><a href="index.html#sports">Sports</a></li>
-                <li><a href="pride.html" class="active">Pride</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#location">Location</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#home" data-en="Home" data-sd="گهر">گهر</a></li>
+                <li><a href="index.html#education" data-en="Education" data-sd="تعليم">تعليم</a></li>
+                <li><a href="medical.html" data-en="Medical" data-sd="طبي سهولتون">طبي سهولتون</a></li>
+                <li><a href="index.html#agriculture" data-en="Agriculture" data-sd="زراعت">زراعت</a></li>
+                <li><a href="index.html#population" data-en="Population" data-sd="آبادي">آبادي</a></li>
+                <li><a href="index.html#sports" data-en="Sports" data-sd="راندون">راندون</a></li>
+                <li><a href="pride.html" class="active" data-en="Pride" data-sd="فخر">فخر</a></li>
+                <li><a href="gallery.html" data-en="Gallery" data-sd="گيلري">گيلري</a></li>
+                <li><a href="index.html#about" data-en="About" data-sd="اسان بابت">اسان بابت</a></li>
+                <li><a href="index.html#location" data-en="Location" data-sd="مقام">مقام</a></li>
+                <li><a href="index.html#contact" data-en="Contact" data-sd="رابطو">رابطو</a></li>
+                <li><button id="langToggleBtn" title="Switch to English">🌐 English</button></li>
             </ul>
         </div>
     </nav>
@@ -55,8 +78,8 @@
     <!-- Pride Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Our Pride</h1>
-            <p>Celebrating the remarkable achievements of our village members</p>
+            <h1 data-en="Our Pride" data-sd="اسان جو فخر">اسان جو فخر</h1>
+            <p data-en="Celebrating the remarkable achievements of our village members" data-sd="اسان جي ڳوٺ جي ماڻهن جي شاندار ڪاميابين کي ساراهيندي">اسان جي ڳوٺ جي ماڻهن جي شاندار ڪاميابين کي ساراهيندي</p>
         </div>
     </section>
 
@@ -70,41 +93,41 @@
                     </div>
                     <div class="pride-info">
                         <h3>M. Bachal Pahore</h3>
-                        <p>Civil Judge Megistrate</p>
-                        <p>Sujawal Sindh Pakistan</p>
+                        <p data-en="Civil Judge Megistrate" data-sd="سول جج ميجسٽريٽ">سول جج ميجسٽريٽ</p>
+                        <p data-en="Sujawal Sindh Pakistan" data-sd="سجاول سنڌ پاڪستان">سجاول سنڌ پاڪستان</p>
                     </div>
                 </div>
-                
+
                 <div class="pride-card">
                     <div class="pride-img">
                         <img src="images/baboo.jpeg" alt="">
                     </div>
                     <div class="pride-info">
                         <h3>Mehboob Alam Pahore</h3>
-                        <p>Senior Police Officer</p>
-                        <p>District Police Department</p>
+                        <p data-en="Senior Police Officer" data-sd="سينيئر پوليس آفيسر">سينيئر پوليس آفيسر</p>
+                        <p data-en="District Police Department" data-sd="ضلعي پوليس کاتو">ضلعي پوليس کاتو</p>
                     </div>
                 </div>
-                
+
                 <div class="pride-card">
                     <div class="pride-img">
                         <img src="images/tarrique.jpeg" alt="">
                     </div>
                     <div class="pride-info">
                         <h3>Engr Tarique Aziz</h3>
-                        <p>Petroleum Engineer</p>
-                        <p>Khobar, Saudi Arabia</p>
+                        <p data-en="Petroleum Engineer" data-sd="پيٽروليم انجنيئر">پيٽروليم انجنيئر</p>
+                        <p data-en="Khobar, Saudi Arabia" data-sd="خبر، سعودي عرب">خبر، سعودي عرب</p>
                     </div>
                 </div>
-                
+
                 <div class="pride-card">
                     <div class="pride-img">
                         <img src="images/dr siddique.jpeg" alt="">
                     </div>
                     <div class="pride-info">
                         <h3>Dr. Siddique Pahore</h3>
-                        <p>Ex Medical Superintendent</p>
-                        <p>LUMHS Hyderabad Sindh</p>
+                        <p data-en="Ex Medical Superintendent" data-sd="سابق ميڊيڪل سپرنٽنڊنٽ">سابق ميڊيڪل سپرنٽنڊنٽ</p>
+                        <p data-en="LUMHS Hyderabad Sindh" data-sd="LUMHS حيدرآباد سنڌ">LUMHS حيدرآباد سنڌ</p>
                     </div>
                 </div>
 
@@ -115,8 +138,8 @@
                     <div class="pride-info">
                         <h3>Dr. Kashif Pahore</h3>
                         <p>MOHQ</p>
-                        <p>PPHI Tando Allahayar</p>
-                    </div>          
+                        <p data-en="PPHI Tando Allahayar" data-sd="PPHI ٽنڊو الهيار">PPHI ٽنڊو الهيار</p>
+                    </div>
                 </div>
 
                 <div class="pride-card">
@@ -125,10 +148,10 @@
                     </div>
                     <div class="pride-info">
                         <h3>Dr. Ayoob Pahore</h3>
-                        <p>Senior Medical Officer</p>
-                        <p>Taluka Matli District Badin</p>
-                    </div> 
-                </div> 
+                        <p data-en="Senior Medical Officer" data-sd="سينيئر ميڊيڪل آفيسر">سينيئر ميڊيڪل آفيسر</p>
+                        <p data-en="Taluka Matli District Badin" data-sd="تعلقو ماتلي ضلعو بادين">تعلقو ماتلي ضلعو بادين</p>
+                    </div>
+                </div>
 
                 <div class="pride-card">
                     <div class="pride-img">
@@ -136,9 +159,9 @@
                     </div>
                     <div class="pride-info">
                         <h3>M Hussain Pahore</h3>
-                        <p>Researcher Assistant</p>
-                        <p>MUET Jamshoro</p>
-                    </div> 
+                        <p data-en="Researcher Assistant" data-sd="ريسرچ اسسٽنٽ">ريسرچ اسسٽنٽ</p>
+                        <p data-en="MUET Jamshoro" data-sd="MUET جامشورو">MUET جامشورو</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,7 +173,7 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Suleman Pahore</h3>
-                    <p>A community rooted in tradition, growing with progress. Our village represents the perfect blend of rural charm and modern development.</p>
+                    <p data-en="A community rooted in tradition, growing with progress. Our village represents the perfect blend of rural charm and modern development." data-sd="روايت ۾ جڙيل، ترقي سان وڌندڙ برادري. اسان جو ڳوٺ ڏيهاتي سحر ۽ جديد ترقي جو بهترين امتزاج پيش ڪري ٿو.">روايت ۾ جڙيل، ترقي سان وڌندڙ برادري. اسان جو ڳوٺ ڏيهاتي سحر ۽ جديد ترقي جو بهترين امتزاج پيش ڪري ٿو.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -158,50 +181,50 @@
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3 data-en="Quick Links" data-sd="فوري لنڪ">فوري لنڪ</h3>
                     <ul class="footer-links">
-                        <li><a href="index.html#home">Home</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="index.html#education">Education</a></li>
-                        <li><a href="medical.html">Medical</a></li>
-                        <li><a href="index.html#agriculture">Agriculture</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html#home" data-en="Home" data-sd="گهر">گهر</a></li>
+                        <li><a href="index.html#about" data-en="About Us" data-sd="اسان بابت">اسان بابت</a></li>
+                        <li><a href="index.html#education" data-en="Education" data-sd="تعليم">تعليم</a></li>
+                        <li><a href="medical.html" data-en="Medical" data-sd="طبي سهولتون">طبي سهولتون</a></li>
+                        <li><a href="index.html#agriculture" data-en="Agriculture" data-sd="زراعت">زراعت</a></li>
+                        <li><a href="index.html#contact" data-en="Contact" data-sd="رابطو">رابطو</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
-                    <h3>Important Places</h3>
+                    <h3 data-en="Important Places" data-sd="اهم مقام">اهم مقام</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Community Center</a></li>
-                        <li><a href="#">Village Mosque</a></li>
-                        <li><a href="#">Agricultural Market</a></li>
-                        <li><a href="#">Sports Ground</a></li>
-                        <li><a href="#">Primary Health Center</a></li>
-                        <li><a href="#">Public Library</a></li>
+                        <li><a href="#" data-en="Community Center" data-sd="برادري مرڪز">برادري مرڪز</a></li>
+                        <li><a href="#" data-en="Village Mosque" data-sd="ڳوٺ جي مسجد">ڳوٺ جي مسجد</a></li>
+                        <li><a href="#" data-en="Agricultural Market" data-sd="زرعي بازار">زرعي بازار</a></li>
+                        <li><a href="#" data-en="Sports Ground" data-sd="راندين جو ميدان">راندين جو ميدان</a></li>
+                        <li><a href="#" data-en="Primary Health Center" data-sd="پرائمري صحت مرڪز">پرائمري صحت مرڪز</a></li>
+                        <li><a href="#" data-en="Public Library" data-sd="عوامي لائبريري">عوامي لائبريري</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to our newsletter for updates about village events and developments.</p>
+                    <h3 data-en="Newsletter" data-sd="نيوز ليٽر">نيوز ليٽر</h3>
+                    <p data-en="Subscribe to our newsletter for updates about village events and developments." data-sd="ڳوٺ جي واقعن ۽ ترقي بابت تازي خبرن لاءِ اسان جي نيوز ليٽر کي سبسڪرائب ڪريو.">ڳوٺ جي واقعن ۽ ترقي بابت تازي خبرن لاءِ اسان جي نيوز ليٽر کي سبسڪرائب ڪريو.</p>
                     <form style="margin-top: 15px;">
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email Address" style="width: 100%; padding: 10px; border-radius: 5px; border: none; outline: none;">
+                            <input type="email" data-ph-en="Your Email Address" data-ph-sd="توهان جو اي ميل پتو" placeholder="توهان جو اي ميل پتو" style="width: 100%; padding: 10px; border-radius: 5px; border: none; outline: none;">
                         </div>
-                        <button type="submit" class="btn" style="width: 100%; padding: 10px; font-size: 0.9rem;">Subscribe</button>
+                        <button type="submit" class="btn" style="width: 100%; padding: 10px; font-size: 0.9rem;" data-en="Subscribe" data-sd="سبسڪرائب ڪريو">سبسڪرائب ڪريو</button>
                     </form>
                 </div>
             </div>
-            
+
             <div class="copyright">
-                <p>&copy; 2023 Suleman Pahore Village. All rights reserved.</p>
+                <p>&copy; 2023 Suleman Pahore Village. <span data-en="All rights reserved." data-sd="سمورا حق محفوظ آهن.">سمورا حق محفوظ آهن.</span></p>
             </div>
-          
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
 </body>
 </html>
