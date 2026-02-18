@@ -23,8 +23,23 @@
     <nav>
            <div class="container">
             <div class="nav-logo">
-                <img  src="images/village-logo.png" alt="Suleman Pahore Logo">
-                <p>Village Suleman Pahore</p>
+                <div class="logo-badge">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
+                        <circle cx="24" cy="24" r="22" fill="rgba(201,162,39,0.15)" stroke="rgba(201,162,39,0.6)" stroke-width="1.5"/>
+                        <!-- House / Village -->
+                        <path d="M24 10 L36 20 L36 38 L12 38 L12 20 Z" fill="none" stroke="#C9A227" stroke-width="1.8" stroke-linejoin="round"/>
+                        <path d="M20 38 L20 28 L28 28 L28 38" fill="none" stroke="#C9A227" stroke-width="1.6" stroke-linejoin="round"/>
+                        <!-- Roof peak -->
+                        <path d="M10 21 L24 9 L38 21" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Window -->
+                        <rect x="15" y="23" width="6" height="6" rx="1" fill="rgba(201,162,39,0.5)" stroke="#C9A227" stroke-width="1.2"/>
+                        <rect x="27" y="23" width="6" height="6" rx="1" fill="rgba(201,162,39,0.5)" stroke="#C9A227" stroke-width="1.2"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">Suleman Pahore</span>
+                    <span class="logo-tagline">Village</span>
+                </div>
             </div>
             <button class="hamburger" id="hamburger">
                 <span></span>
@@ -39,7 +54,7 @@
                 <li><a href="#agriculture">Agriculture</a></li>
                 <li><a href="#population">Population</a></li>
                 <li><a href="#sports">Sports</a></li>
-                <li><a href="pride.html">Our Pride</a></li>
+                <li><a href="pride.html">Pride</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#location">Location</a></li>
@@ -110,9 +125,19 @@
                         <p><strong>Dr. Ali Nawaz Pahore</strong></p>
                         <p>General Physician and Child Specialist  MBBS LUMHS Jamshoro</p>
                     </div>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +92 300 1234567</p>
-                        <p><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM (Mon-Sat)</p>
+                    <div class="doctor-hours">
+                        <i class="fas fa-clock"></i> 9:00 AM – 5:00 PM (Mon–Sat)
+                    </div>
+                    <div class="doctor-contacts">
+                        <a href="tel:+923001234567" class="doc-btn doc-btn-phone">
+                            <i class="fas fa-phone"></i> Call
+                        </a>
+                        <a href="https://wa.me/923001234567" target="_blank" class="doc-btn doc-btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="mailto:alinawaz@example.com" class="doc-btn doc-btn-email">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
                     </div>
                 </div>
                 
@@ -126,9 +151,19 @@
                         <p><strong>Dr. Ilyas Pahore</strong></p>
                         <p>General Physician with 10 years of experience<br>MBBS LUMHS Jamshoro</p>
                     </div>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +92 321 7654321</p>
-                        <p><i class="fas fa-clock"></i> 10:00 AM - 7:00 PM (Mon-Sat)</p>
+                    <div class="doctor-hours">
+                        <i class="fas fa-clock"></i> 10:00 AM – 7:00 PM (Mon–Sat)
+                    </div>
+                    <div class="doctor-contacts">
+                        <a href="tel:+923217654321" class="doc-btn doc-btn-phone">
+                            <i class="fas fa-phone"></i> Call
+                        </a>
+                        <a href="https://wa.me/923217654321" target="_blank" class="doc-btn doc-btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="mailto:ilyas@example.com" class="doc-btn doc-btn-email">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
                     </div>
                 </div>
                 
@@ -140,11 +175,21 @@
                     <div class="clinic-info">
                         <h3>M Moosa Clinic</h3>
                         <p><strong>DR. Moosa Pahore</strong></p>
-                        <p>General Physician with 20 years of experience </p>
+                        <p>General Physician with 20 years of experience</p>
                     </div>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +92 345 9876543</p>
-                        <p><i class="fas fa-clock"></i> 9:00 AM - 7:00 PM (MON-SAN)</p>
+                    <div class="doctor-hours">
+                        <i class="fas fa-clock"></i> 9:00 AM – 7:00 PM (Mon–Sun)
+                    </div>
+                    <div class="doctor-contacts">
+                        <a href="tel:+923459876543" class="doc-btn doc-btn-phone">
+                            <i class="fas fa-phone"></i> Call
+                        </a>
+                        <a href="https://wa.me/923459876543" target="_blank" class="doc-btn doc-btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="mailto:moosa@example.com" class="doc-btn doc-btn-email">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
                     </div>
                 </div>
             </div>
@@ -244,9 +289,9 @@
             <div class="population-content">
                 <div class="population-stats">
                     <h3>Total Population</h3>
-                    <p style="font-size: 4rem; font-weight: 700; color: var(--primary);">10000+</p>
+                    <p class="population-number">10000+</p>
                     
-                    <div class="stats-grid" style="grid-template-columns: 1fr 1fr; margin-top: 40px;">
+                    <div class="stats-grid population-gender-grid" style="margin-top: 40px;">
                         <div class="stat-item" style="background-color: #3498db; color: white;">
                             <h4>6000</h4>
                             <p>Male Residents</p>
@@ -264,10 +309,10 @@
                 </div>
                 
                 <div class="chart-container">
-                    <div class="chart male-chart" id="maleChart" style="height: 0;"></div>
+                    <div class="chart male-chart" id="maleChart" style="height: 0; background-color: #3498db;"></div>
                     <div class="chart-label-M">Female</div>
                     
-                    <div class="chart female-chart" id="femaleChart" style="height: 0;"></div>
+                    <div class="chart female-chart" id="femaleChart" style="height: 0; background-color: #e74c3c;"></div>
                     <div class="chart-label-F">Male</div>
                 </div>
             </div>
@@ -457,7 +502,7 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <strong style="color: #f8f9fa;">Email</strong>
-                                <p>info@sulemanpahore.com</p>
+                                <p>villagesulemanpahore@gmail.com</p>
                             </div>
                         </li>
                         <li>
@@ -472,22 +517,36 @@
                 
                 <div class="contact-form">
                     <h3>Send a Message</h3>
-                    <form>
+                    <!-- 
+                        IMPORTANT: To activate Web3Forms:
+                        1. Go to https://web3forms.com
+                        2. Sign up using: villagesulemanpahore@gmail.com
+                        3. Get your Access Key from the dashboard
+                        4. Replace 'YOUR_ACCESS_KEY_HERE' below with your actual access key
+                        5. Save the file and test the form
+                    -->
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="fe7c7fb0-ef45-4142-82b9-db68728b5b10">
+                        
+                        <!-- Redirect to thank you page after submission (optional) -->
+                        <input type="hidden" name="redirect" value="https://villagesulemanpahore.com/thank-you.html">
+                        
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" required>
+                            <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" required>
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject">
+                            <input type="text" id="subject" name="subject">
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" required></textarea>
+                            <textarea id="message" name="message" required></textarea>
                         </div>
                         <button type="submit" class="btn">Send Message</button>
                     </form>
@@ -549,9 +608,6 @@
             
             <div class="copyright">
                 <p>&copy; 2025 Suleman Pahore Village. All rights reserved.</p>
-            </div>
-              <div class="footer-content">
-            <p>Developed By Nazim Pahore</p>
             </div>
             </div>
     </footer>

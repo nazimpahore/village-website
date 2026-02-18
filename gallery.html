@@ -14,8 +14,20 @@
     <nav>
         <div class="container">
             <div class="nav-logo">
-                <img src="images/village-logo.png" alt="Suleman Pahore Logo">
-                <p>Village Suleman Pahore</p>
+                <div class="logo-badge">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
+                        <circle cx="24" cy="24" r="22" fill="rgba(201,162,39,0.15)" stroke="rgba(201,162,39,0.6)" stroke-width="1.5"/>
+                        <path d="M24 10 L36 20 L36 38 L12 38 L12 20 Z" fill="none" stroke="#C9A227" stroke-width="1.8" stroke-linejoin="round"/>
+                        <path d="M20 38 L20 28 L28 28 L28 38" fill="none" stroke="#C9A227" stroke-width="1.6" stroke-linejoin="round"/>
+                        <path d="M10 21 L24 9 L38 21" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="15" y="23" width="6" height="6" rx="1" fill="rgba(201,162,39,0.5)" stroke="#C9A227" stroke-width="1.2"/>
+                        <rect x="27" y="23" width="6" height="6" rx="1" fill="rgba(201,162,39,0.5)" stroke="#C9A227" stroke-width="1.2"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">Suleman Pahore</span>
+                    <span class="logo-tagline">Village</span>
+                </div>
             </div>
             
             <button class="hamburger" id="hamburger">
@@ -31,7 +43,7 @@
                 <li><a href="index.html#agriculture">Agriculture</a></li>
                 <li><a href="index.html#population">Population</a></li>
                 <li><a href="index.html#sports">Sports</a></li>
-                <li><a href="index.html#pride">Our Pride</a></li>
+                <li><a href="index.html#pride">Pride</a></li>
                 <li><a href="gallery.html" class="active">Gallery</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#location">Location</a></li>
@@ -44,13 +56,23 @@
     <section class="page-header">
         <div class="container">
             <h1>Village Gallery</h1>
-            <p>Explore the beautiful moments and memories from our village</p>
+            <p>Explore the beautiful moments, memories, and stories from our village</p>
         </div>
     </section>
 
-    <!-- Full Gallery Section -->
-    <section class="gallery" style="padding-top: 50px;">
+    <!-- ===== IMAGE GALLERY SECTION ===== -->
+    <section class="gallery-section" id="image-gallery">
         <div class="container">
+            <div class="gallery-section-header">
+                <div class="gallery-section-icon">
+                    <i class="ri-image-2-line"></i>
+                </div>
+                <div>
+                    <h2 class="gallery-section-title">Image Gallery</h2>
+                    <p class="gallery-section-subtitle">Captured moments from our village life</p>
+                </div>
+            </div>
+
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <img src="images/land.jpeg" alt="Rainy Season">
@@ -61,16 +83,16 @@
                     <div class="gallery-overlay">Meets With Sain Sadaruddin Shah</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/mohsin.jpeg" alt="Captured Moment from Mohsin Pahore's Wedding Ceremony">
-                    <div class="gallery-overlay">Captured Moment from Mohsin Pahore's Wedding Ceremony</div>
+                    <img src="images/mohsin.jpeg" alt="Mohsin Pahore's Wedding Ceremony">
+                    <div class="gallery-overlay">Mohsin Pahore's Wedding Ceremony</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/old.jpeg" alt="Senior Villagers">
                     <div class="gallery-overlay">Senior Villagers</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/ramzan.jpeg" alt="Hafiz e saheban">
-                    <div class="gallery-overlay">Hafiz e saheban</div>
+                    <img src="images/ramzan.jpeg" alt="Hafiz e Saheban">
+                    <div class="gallery-overlay">Hafiz e Saheban</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/jalsa.jpeg" alt="Jalsa Sharif">
@@ -85,8 +107,8 @@
                     <div class="gallery-overlay">Team B Celebrating</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/gethiring.jpeg" alt="Villagers Gethering">
-                    <div class="gallery-overlay">Villagers Gethering</div>
+                    <img src="images/gethiring.jpeg" alt="Villagers Gathering">
+                    <div class="gallery-overlay">Villagers Gathering</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/khalifa.jpeg" alt="Chief Khalifa Lal Bux Ahamadani">
@@ -97,18 +119,131 @@
                     <div class="gallery-overlay">Respected Teacher Sir M Khan</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/suleman.jpeg" alt="Senior Citizen Meeting eachother">
-                    <div class="gallery-overlay">Senior Citizen Meeting eachother</div>
+                    <img src="images/suleman.jpeg" alt="Senior Citizens Meeting">
+                    <div class="gallery-overlay">Senior Citizens Meeting</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/mamo.jpeg" alt="Cousins on weekend">
-                    <div class="gallery-overlay">Abdullah in funny mood</div>
+                    <img src="images/mamo.jpeg" alt="Abdullah in Funny Mood">
+                    <div class="gallery-overlay">Abdullah in Funny Mood</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/child.jpeg" alt="Abdullah in funny mood">
-                    <div class="gallery-overlay">Cousins on weekend </div>
+                    <img src="images/child.jpeg" alt="Cousins on Weekend">
+                    <div class="gallery-overlay">Cousins on Weekend</div>
                 </div>
-                
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VIDEO GALLERY SECTION ===== -->
+    <section class="gallery-section video-gallery-section" id="video-gallery">
+        <div class="container">
+            <div class="gallery-section-header">
+                <div class="gallery-section-icon video-icon">
+                    <i class="ri-video-line"></i>
+                </div>
+                <div>
+                    <h2 class="gallery-section-title">Video Gallery</h2>
+                    <p class="gallery-section-subtitle">Watch memorable events and celebrations from our village</p>
+                </div>
+            </div>
+
+            <div class="video-grid">
+                <!-- Replace VIDEO_ID with actual YouTube video IDs -->
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/VIDEO_ID_1"
+                            title="Village Event 1"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-caption">
+                        <i class="ri-play-circle-line"></i>
+                        <span>Village Event</span>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/VIDEO_ID_2"
+                            title="Jalsa Sharif Highlights"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-caption">
+                        <i class="ri-play-circle-line"></i>
+                        <span>Jalsa Sharif Highlights</span>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/VIDEO_ID_3"
+                            title="Sports Tournament"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-caption">
+                        <i class="ri-play-circle-line"></i>
+                        <span>Sports Tournament</span>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/VIDEO_ID_4"
+                            title="Wedding Ceremony"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-caption">
+                        <i class="ri-play-circle-line"></i>
+                        <span>Wedding Ceremony</span>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/VIDEO_ID_5"
+                            title="Community Gathering"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-caption">
+                        <i class="ri-play-circle-line"></i>
+                        <span>Community Gathering</span>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/VIDEO_ID_6"
+                            title="Cultural Program"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-caption">
+                        <i class="ri-play-circle-line"></i>
+                        <span>Cultural Program</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -165,12 +300,9 @@
             </div>
             
             <div class="copyright">
-                <p>&copy; 2023 Suleman Pahore Village. All rights reserved.</p>
+                <p>&copy; 2025 Suleman Pahore Village. All rights reserved.</p>
             </div>
-              <div class="footer-content">
-            <p>Made With <i class="ri-hearts-line"></i> by Nazim Pahore</p>
-            </div>
-            </div>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
